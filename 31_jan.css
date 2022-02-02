@@ -49,7 +49,7 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     }
     
     
@@ -78,7 +78,11 @@
         border-radius: 5px;
         color: white;
     cursor: pointer;
-     border-radius: 5px; 
+     border-radius: 8px; 
+     text-decoration: none;
+     font-size: 15px;
+     border: 2px solid #555555;
+
 
     }
     .flex-group{
@@ -117,48 +121,57 @@
     .about img{
         width: 50%;
         height: 100%;
+        float: right;
     }
     
     .gridsection {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         background-color: white;
-        width: 50%;
+        
         gap: 13px;
         row-gap: 13px;
         column-gap: 13px;
         text-align: center;
-        margin-left: 10%;
+    
+        margin-top: 10px;
+        padding: 20px;
 }
         .flex-cards {
         display: flex;
         flex-direction:column;
         gap:16px;
+        overflow: hidden;
         border:1px solid black;
         border-radius: 10px;
+        
     }
 .content-div{
-    display: flex;
+   display: flex;
    flex-direction: row;
    gap:20px;
    border: 1px solid black;
    border-radius: 10px;
-   width: 75vw;
+   width: 90vw;
+   margin: auto;
    padding: 20px;
    justify-content: space-between;
    align-items: center;
    background-color: white;
    color: black;
-   margin-left: 10%;
+
    background-color: white;
 }
 .btn{
     background: blue;
-        padding: 4px;
-        border-radius: 5px;
-        color: white;
-    cursor: pointer;
-     border-radius: 5px; 
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+cursor: pointer;
+ border-radius: 8px; 
+ text-decoration: none;
+ font-size: 15px;
+ border: 2px solid #555555;
 } 
 #input_box{
     height: 42px;
