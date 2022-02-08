@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltips</title>
+    <style>
+        .t1{
+            background-color: chartreuse;
+            padding: 15px 32px;
+            display: inline-block;
+            position: relative;
+        }
+        .t1.t2{
+            /* visibility: hidden; */
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            z-index: 1;
+        }
+        .t1:hover{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <center>
+  <div class="t1">Hover over me
+<span class="t2">Tooltip text</span>
+  </div> 
+  </center> 
+</body>
+</html>

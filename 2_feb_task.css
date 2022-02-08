@@ -9,7 +9,7 @@
         width: 100%;
     }
     nav{
-    background: #0082e6;
+    background: #3F51B5;
     height: 80px;
     width: 100%;
     
@@ -36,6 +36,8 @@
     padding: 7px 13px;
     border-radius: 3px;
     font-size: 17px;
+    text-decoration: none;
+
     }
     .card{
         background: #fbfbfb;
@@ -56,32 +58,64 @@
     }
 
     .main-div{
-        height: 200px;
-        width: 500px;
-        
-        margin-left: 50px;
         display: flex;
+        gap: 20px;
+
+        
     }
-    .cardsign-fb{
-    background: #0082e6;
-     border-radius: 8px;
-        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-        height: 100px;
-        width: 200px;
-        margin-left: 20px;
-        margin: auto;
+    #log_btn_fb{
+    background: #3F51B5;
+    height: 100px;
+        width : 200px;
+        color: white;
+        
+       
     }
-    .cardsign-google{
-        background: #0082e6;
-     border-radius: 8px;
-        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-        height: 100px;
-        width: 200px;
-        margin-left: 20px;
-        margin: auto;
-        float: right;
+    #log_btn_google{
+    background: #3F51B5;
+    height: 100px;
+        width : 200px;
+        color: white;
+
     }
+    
     .option{
         text-align: center;
         
     }
+    
+    #input_mob{
+        height: 60px;
+    width : 500px;
+    border: 1px solid black;
+border-radius: 8px;
+margin-left: 45px;
+font-size: 15px;
+    
+    }
+    #input_password{
+        height: 60px;
+    width : 500px;
+border-radius: 8px;
+ border: 1px solid black;
+margin-left: 45px;
+font-size: 15px;
+
+
+    }
+    #sign_btn{
+        height: 60px;
+        width : 500px;
+        border-radius: 8px;
+ border: 1px solid black;
+    background: #3F51B5;
+        color: white;
+margin-left: 45px;
+font-size: 20px;
+
+    }
+    .password_option_div{
+        display: flex;
+        
+    }
+

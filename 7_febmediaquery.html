@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media query</title>
-    <link rel="stylesheet" href="7_febmediaquery.css">
+    
+    <style>
+        .box {
+            background-color: red;
+            font-size: 22px;
+            text-align: center;
+            color: white;
+            display: none;
+        }
+
+        @media (max-width:500px) {
+            #box1 {
+                display: block;
+            }
+        }
+
+        @media only screen and (max-width:500px) and (min-width: 300) {
+            #box1 {
+                display: block;
+                background-color: black;
+            }
+        }
+    </style>
 
 </head>
+
 <body>
-    <div  class="box" id="box1">i phone</div>
-    <div  class="box" id="box2">tablet</div>
-    <div  class="box" id="box3">computer</div>
-    <div  class="box" id="box4">wide screen computer</div>
+    <div class="box" id="box1">i phone</div>
+    <div class="box" id="box2">tablet</div>
+    <div class="box" id="box3">computer</div>
+    <div class="box" id="box4">wide screen computer</div>
 
 </body>
+
 </html>
