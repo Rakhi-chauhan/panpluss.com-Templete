@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collapse</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ecf0f1;
+        }
+
+        .accordion {
+            width: 80%;
+            background-color: white;
+
+        }
+
+        .accordtion-tab .accordtion-toggle {
+            display: none;
+        }
+
+        .accordtion-tab>label {
+            color: white;
+            background: #2980b9;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+            position: relative;
+            display: block;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-top: 1px solid black;
+        }
+
+        .accordtion-tab>.accordion-content {
+
+            max-height: 0;
+            transition: all .4s;
+            overflow: hidden;
+        }
+
+        .accordtion-tab>.accordion-content p {
+            padding: 15px 20px;
+            line-height: 15px;
+        }
+
+        .accordtion-tab>.accordtion-toggle:checked~.accordion-content {
+            padding: 20px;
+            max-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="accordion">
+        <div class="accordtion-tab">
+            <input type="checkbox" class="accordtion-toggle" name=" toggle" id="toggle1">
+            <label for="toggle1">Collapse</label>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus sapiente necessitatibus libero
+                    dolores inventore harum amet? Veniam unde minima doloremque fugit, velit iste minus consectetur,
+                    perferendis enim itaque est!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt temporibus aspernatur qui
+                    atque ipsum
+                    facilis alias dicta quasi distinctio quos tempora debitis eaque modi eligendi, quibusdam suscipit,
+                    rem molestias.</p>
+            </div>
+        </div>
+
+
+        <div class="accordion">
+            <div class="accordtion-tab">
+                <input type="checkbox" class="accordtion-toggle" name=" toggle" id="toggle2">
+                <label for="toggle2">Collapse 1</label>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus sapiente necessitatibus
+                        libero
+                        dolores inventore harum amet? Veniam unde minima doloremque fugit, velit iste minus consectetur,
+                        perferendis enim itaque est!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt temporibus aspernatur
+                        qui atque ipsum
+                        facilis alias dicta quasi distinctio quos tempora debitis eaque modi eligendi, quibusdam
+                        suscipit, rem molestias.</p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordtion-tab">
+                    <input type="checkbox" class="accordtion-toggle" name=" toggle" id="toggle3">
+                    <label for="toggle2">Collapse 2</label>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus sapiente necessitatibus
+                            libero
+                            dolores inventore harum amet? Veniam unde minima doloremque fugit, velit iste minus
+                            consectetur, perferendis enim itaque est!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt temporibus
+                            aspernatur qui atque ipsum
+                            facilis alias dicta quasi distinctio quos tempora debitis eaque modi eligendi, quibusdam
+                            suscipit, rem molestias.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordtion-tab">
+                        <input type="checkbox" class="accordtion-toggle" name=" toggle" id="toggle4">
+                        <label for="toggle4">Collapse 3</label>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus sapiente
+                                necessitatibus libero
+                                dolores inventore harum amet? Veniam unde minima doloremque fugit, velit iste minus
+                                consectetur, perferendis enim itaque est!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt temporibus
+                                aspernatur qui atque ipsum
+                                facilis alias dicta quasi distinctio quos tempora debitis eaque modi eligendi, quibusdam
+                                suscipit, rem molestias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
