@@ -27,7 +27,7 @@
         .container {
             max-width: 700px;
             width: 100%;
-            height: 50%;
+            height: 70%;
             background: #fff;
             padding: 25px 30px;
             border-radius: 5px;
@@ -36,7 +36,7 @@
         .container .title {
             font-size: 25px;
             font-weight: 500;
-            position: relative;
+
         }
 
         .container .title::before {
@@ -55,10 +55,11 @@
             justify-content: space-between;
             margin: 20px 0 12px 0;
 
+
         }
 
         .form .user-details .input-box {
-            width: calc(100% / 2 -20px);
+
             margin-bottom: 15px;
         }
 
@@ -66,6 +67,7 @@
 
             font-weight: 500;
             margin-bottom: 5px;
+            background-color: yellow;
         }
 
         .user-details .input-box input {
@@ -78,7 +80,14 @@
             font-size: 16px;
             border-bottom-width: 2px;
             transition: all 0.3s ease;
+
         }
+
+        .user-details .input-box input[type=file]{
+            margin: auto;
+        }
+
+        
 
         .user-details .input-box input:focus,
         .user-details .input-box input:valid {
@@ -95,60 +104,61 @@
             justify-content: space-between;
             font-size: 16px;
 
-            
-        }
-
-         .time-deatils{
-            display: flex;
             margin: 20px 0 12px 0;
-            
-            
-
         }
-        .tel_url_pass_div{
-            display: flex;
-            justify-content: space-between;
-            margin: 20px 0 12px 0;
+
+        .button input {
             
-
-
-        }
-        .button{
-            margin-left: 40%;
             margin-top: 30px;
             color: white;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            height: 50px;
+            width: 600px;
+            font-family:'Roboto',sans-serif;
+            cursor: pointer;
+            box-sizing: border-box;
+            border-radius: 0.12em;
+        }
+        .button input:hover{
+            background: #3F51B5;;
+            
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="title">form</div>
+        <div class="title">Form</div>
 
         <form action="#">
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">First Name</span>
-                    <input type="text" placeholder="Enter your First Name" required>
+                    <input type="text" placeholder="Enter your First Name">
                 </div>
 
                 <div class="input-box">
                     <span class="details">Last Name</span>
-                    <input type="text" placeholder="Enter your Last Name" required>
+                    <input type="text" placeholder="Enter your Last Name">
                 </div>
 
                 <div class="input-box">
                     <span class="details">Email Address</span>
-                    <input type="email" placeholder="Enter your mail Id" required>
+                    <input type="email" placeholder="Enter your mail Id">
                 </div>
 
                 <div class="input-box">
                     <span class="details">Phone Number</span>
-                    <input type="number" placeholder="Enter your Phone Number" required>
+                    <input type="number" placeholder="Enter your Phone Number">
                 </div>
 
                 <div class="input-box">
-                    <span class="details">date</span>
+                    <span class="details">Date</span>
                     <input type="date">
                 </div>
 
@@ -159,12 +169,12 @@
             </div>
 
             <div class="gender-deatils">
-                <span class="gender-title">Gender</span>
-                <div class="category">
+                <span class="gender-title">Gender :</span>
+                <span class="category">
                     <label for="">
 
                         <span class="gender">Male</span>
-                        <input type="radio">
+                        <input type="radio" checked>
 
                     </label>
 
@@ -172,30 +182,30 @@
                         <span class="gender">Female</span>
                         <input type="radio">
                     </label>
+                </span>
+            </div>
+
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Time</span>
+                    <input type="time">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Enter Week</span>
+                    <input type="week">
                 </div>
             </div>
 
-<div class="time-deatils"> 
-            <div class="input-box">
-                <span class="details">Time</span>
-                <input type="time">
-            </div>
 
-            <div class="input-box">
-                <span class="details">Enter Week</span>
-                <input type="week">
-            </div>
-            </div>
-
-
-            <div class="tel_url_pass_div">
+            <div class="user-details">
                 <div class="input-box">
-                    <span class="details">tel</span>
+                    <span class="details">Tel</span>
                     <input type="tel">
                 </div>
 
                 <div class="input-box">
-                    <span class="details">url</span>
+                    <span class="details">Url</span>
                     <input type="url">
                 </div>
 

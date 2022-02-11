@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 10px;
+        }
+
+        .main_div {
+            max-width: 700px;
+            width: 100%;
+            height: 70%;
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 5px;
+        }
+
+        .first_div {
+            display: flex;
+            justify-content: center;
+        
+        }
+        .fname_div{
+            margin-right: 2em;
+            
+        }
+
+        .sec_div {
+            display: flex;
+            justify-content: center
+        }
+        
+
+
+        .third_div {
+            display: flex;
+            justify-content: center;
+        }
+        .email_div{
+            margin-right: 2em;
+
+        }
+
+        .fourth_div {
+            display: flex;
+        }
+
+        .date_div{
+            margin-right: 2em;
+
+        }
+
+        .fifth_div {
+            display: flex;
+            justify-content: center;
+        }
+
+        .time_div{
+            margin-right: 2em;
+
+        }
+        .tel_div{
+            margin-right: 2em;
+
+        }
+        .url_div{
+            margin-right: 2em;
+
+        }
+
+        .details {
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        input {
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+            margin: 12px 0 12px 0;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+
+        input[type=submit]{
+            
+            color: white;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            height: 50px;
+            width: 600px;
+            cursor: pointer;
+            box-sizing: border-box;
+            border-radius: 0.12em;
+        }
+
+        input[type=file]{
+            width: 80%;
+            margin-left: 5rem;
+        }
+        input[type=date]{
+            width: 80%;
+        }
+        input[type=week]{
+            margin-left: 2rem;
+        }
+        .file_div span{
+            margin-left: 7rem;
+        }
+        .week_div span{
+            margin-left: 2rem;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="first_div">
+            <div class="fname_div">
+                <span class="details">First Name</span>
+                <input type="text" placeholder="Enter Your First Name">
+            </div>
+
+            <div class="lname_div">
+                <span class="details">First Name</span>
+                <input type="text" placeholder="Enter your Last Name">
+            </div>
+        </div>
+
+        <div class="sec_div">
+            <div class="email_div">
+                <span class="details">Email Address</span>
+                <input type="email" placeholder="Enter your Mail Id">
+            </div>
+
+            <div class="num_div">
+                <span class="details">Enter Number</span>
+                <input type="number" placeholder="Enter your Mobile Number">
+            </div>
+        </div>
+
+        <div class="third_div">
+
+            <div class="date_div">
+                <span class="details">Choose Date</span>
+                <input type="date">
+            </div>
+
+
+            <div class="file_div">
+                <span class="details">Choose File</span>
+                <input type="file">
+            </div>
+        </div>
+
+
+        <div class="fourth_div">
+
+            <div class="time_div">
+                <span class="details">Time</span>
+                <input type="time">
+            </div>
+
+
+            <div class="week_div">
+                <span class="details">Week</span>
+                <input type="week">
+            </div>
+        </div>
+
+        <div class="fifth_div">
+
+
+            <div class="tel_div">
+                <span class="details">Tel</span>
+                <input type="tel">
+            </div>
+
+
+            <div class="url_div">
+                <span class="details">Url</span>
+                <input type="url" placeholder="Enter Url">
+            </div>
+
+
+
+            <div class="password_div">
+                <span class="details">Password</span>
+                <input type="password" placeholder="Enter your Password">
+            </div>
+        </div>
+
+        <div class="sixth_div">
+
+            <input type="submit" value="Submit">
+
+        </div>
+
+    </div>
+</body>
+
+</html>
