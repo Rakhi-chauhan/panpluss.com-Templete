@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url();
+            color: #000305;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 87.5%;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        .body {
+            margin: 0 auto;
+            width: 70%;
+            clear: both;
+        }
+
+        .mainheader img {
+            width: 30%;
+            height: auto;
+            margin: 2% 0;
+        }
+
+        .mainheader nav {
+            background-color: #666;
+            height: 40px;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+
+        .mainheader nav ul {
+            list-style: none;
+            margin: 0 auto;
+
+        }
+
+        .mainheader nav ul li {
+            float: left;
+            display: inline;
+        }
+
+        .mainheader nav a:link,
+        .mainheader nav a:visited {
+            color: #fff;
+            display: inline-block;
+            padding: 10px 25px;
+            height: 20px;
+
+        }
+
+        .mainheader nav a:hover,
+        .mainheader nav a:active,
+        .mainheader nav .active a:link,
+        .mainheader nav .active a:visited {
+            background-color: #CF5C3F;
+            text-shadow: none;
+        }
+
+        .mainheader nav ul li a {
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+
+        .mainContent {
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            line-height: 25px;
+            /* overflow: hidden; */
+        }
+
+        .content {
+            width: 70%;
+            float: left;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+
+        .topContent {
+            background-color: #fff;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            padding: 3% 5%;
+            margin-top: 2%;
+
+        }
+
+        .bottomContent {
+            background-color: #fff;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            padding: 3% 5%;
+            margin-top: 2%;
+
+        }
+
+        .post-info {
+            font-style: italic;
+            color: #999;
+            font-size: 85%;
+        }
+
+        .top-slidebar {
+            width: 21%;
+            float: left;
+            background-color: #fff;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            margin-left: 2%;
+            margin-bottom: 2%;
+            margin-top: 1%;
+            padding: 2% 3%;
+        }
+
+        .middle-slidebar {
+            width: 21%;
+            float: left;
+            background-color: #fff;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            margin-left: 2%;
+            padding: 2% 3%;
+            margin-top: 1%;
+            margin-bottom: 2%;
+
+
+
+        }
+
+        .bottom-slidebar {
+            width: 21%;
+            float: left;
+            background-color: #fff;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            margin-left: 2%;
+            padding: 2% 3%;
+            margin-top: 1%;
+            margin-bottom: 2%;
+        }
+
+        .mainfooter {
+            width: 100%;
+            float: left;
+            height: 40px;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            background-color: #666;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        .mainfooter p {
+            width: 92%;
+            margin: 1% auto;
+            color: #fff;
+        }
+
+        @media screen and (min-width: 150px) and (max-width:600px) {
+            .body {
+                width: 90%;
+                font-size: 95%;
+            }
+
+            .mainheader img {
+                width: 100%;
+
+            }
+
+            .mainheader nav {
+
+                height: 160px;
+
+            }
+
+            .mainheader nav ul {
+                padding-left: 0;
+
+            }
+
+            .mainheader nav ul li {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .mainheader nav a:link,
+            .mainheader nav a:visited {
+                padding: 10px 25px;
+                height: 20px;
+                display: block;
+
+            }
+
+
+
+            .content {
+                width: 100%;
+                float: left;
+                margin-top: 2%;
+
+            }
+
+            .post-info {
+                display: none;
+            }
+
+            .topContent {
+                background-color: #fff;
+                border-radius: 5px;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                padding: 3% 5%;
+                margin-top: 2%;
+                margin-bottom: 4%;
+
+            }
+
+            .bottomContent {
+
+                margin-top: 3%;
+
+            }
+
+            .top-slidebar {
+                width: 94%;
+                margin-left: 2%;
+                margin-bottom: 2%;
+                margin-top: 0%;
+                padding: 2% 3%;
+            }
+
+            .middle-slidebar {
+                width: 94%;
+                margin-left: 2%;
+                margin-bottom: 2%;
+                margin-top: 0%;
+                padding: 2% 3%;
+
+
+
+            }
+
+            .bottom-slidebar {
+                width: 94%;
+                margin-left: 2%;
+                margin-bottom: 2%;
+                margin-top: 0%;
+                padding: 2% 3%;
+            }
+
+            .mainfooter {
+                width: 100%;
+                float: left;
+                height: 40px;
+                border-radius: 5px;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                background-color: #666;
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+
+            .mainfooter p {
+                width: 92%;
+                margin: 1% auto;
+                color: #fff;
+
+            }
+        }
+    </style>
+</head>
+
+<body class="body">
+    <header class="mainheader">
+        <img src="facebok.png">
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolliyo</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="mainContent">
+        <div class="content">
+            <article class="topContent">
+                <header>
+                    <h2><a href="#" title="first post">first post</a></h2>
+
+                    <footer>
+                        <p class="post-info">This post is by Rakhi Chauhan</p>
+                    </footer>
+                    <content>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iste quod
+                            quaerat voluptatum ratione saepe architecto? Quae, impedit esse cumque architecto iste
+                            numquam laborum maxime obcaecati, repudiandae quaerat natus dolor.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iste quod
+                            quaerat voluptatum ratione saepe architecto? Quae, impedit esse cumque architecto iste
+                            numquam laborum maxime obcaecati, repudiandae quaerat natus dolor.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iste quod
+                            quaerat voluptatum ratione saepe architecto? Quae, impedit esse cumque architecto iste
+                            numquam laborum maxime obcaecati, repudiandae quaerat natus dolor.</p>
+                    </content>
+                </header>
+            </article>
+
+            <article class="bottomContent">
+                <header>
+                    <h2><a href="#" title="second post">second post</a></h2>
+
+                    <footer>
+                        <p class="post-info">This post is by Rakhi Chauhan</p>
+                    </footer>
+                    <content>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iste quod
+                            quaerat voluptatum ratione saepe architecto? Quae, impedit esse cumque architecto iste
+                            numquam laborum maxime obcaecati, repudiandae quaerat natus dolor.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iste quod
+                            quaerat voluptatum ratione saepe architecto? Quae, impedit esse cumque architecto iste
+                            numquam laborum maxime obcaecati, repudiandae quaerat natus dolor.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iste quod
+                            quaerat voluptatum ratione saepe architecto? Quae, impedit esse cumque architecto iste
+                            numquam laborum maxime obcaecati, repudiandae quaerat natus dolor.</p>
+                    </content>
+                </header>
+            </article>
+        </div>
+
+    </div>
+    <aside class="top-slidebar">
+        <article>
+            <h2>Top slidebar</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, asperiores blanditiis? In explicabo
+                tempore facilis accusamus assumenda, corrupti voluptatem maxime nesciunt nisi aliquid, temporibus dolore
+                minima. Rem officia ducimus aperiam!</p>
+        </article>
+    </aside>
+
+    <aside class="middle-slidebar">
+        <article>
+            <h2>Middle slidebar</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, asperiores blanditiis? In explicabo
+                tempore facilis accusamus assumenda, corrupti voluptatem maxime nesciunt nisi aliquid, temporibus dolore
+                minima. Rem officia ducimus aperiam!</p>
+        </article>
+    </aside>
+
+    <aside class="bottom-slidebar">
+        <article>
+            <h2>Bottom slidebar</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, asperiores blanditiis? In explicabo
+                tempore facilis accusamus assumenda, corrupti voluptatem maxime nesciunt nisi aliquid, temporibus dolore
+                minima. Rem officia ducimus aperiam!</p>
+        </article>
+    </aside>
+    <footer class="mainfooter">
+        <p>Copyright &copy; <a href="#" title="firstTemplate">Rakhichauhan094</a></p>
+    </footer>
+</body>
+
+</html>
