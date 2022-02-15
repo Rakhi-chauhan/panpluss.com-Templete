@@ -27,43 +27,47 @@
         .main_div {
             max-width: 700px;
             width: 100%;
-            height: 70%;
+            height: auto;
             background: #fff;
             padding: 25px 30px;
             border-radius: 5px;
-            display: grid;
+        
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
         }
 
         .first_div {
             display: flex;
             justify-content: center;
-        
+
         }
 
-        .fname_div{
+        .fname_div {
             /* margin-right: 4em; */
             padding-right: 4rem;
-            
-            
+
+
         }
-        .lname_div{
+
+        .lname_div {
             position: relative;
             right: 7px;
         }
-        
+
 
         .sec_div {
             display: flex;
             justify-content: center
         }
-        
+
 
 
         .third_div {
             display: flex;
             gap: 3rem;
         }
-        .email_div{
+
+        .email_div {
             margin-right: 2em;
 
         }
@@ -71,13 +75,14 @@
         .fourth_div {
             display: flex;
         }
-        .week_div{
+
+        .week_div {
             /* position: absolute; */
-            float: right;
-            margin-left: 12rem;
+            
+            margin-left: 10rem;
         }
 
-        .date_div{
+        .date_div {
             margin-right: 2em;
 
         }
@@ -86,18 +91,19 @@
             display: flex;
             /* justify-content: center; */
         }
-        
-        
 
-        /* .time_div{
-            margin-right: 2em;
 
-        } */
-        .tel_div{
+
+        .time_div{
             margin-right: 2em;
 
         }
-        .url_div{
+        .tel_div {
+            margin-right: 2em;
+
+        }
+
+        .url_div {
             margin-right: 2em;
 
         }
@@ -112,8 +118,11 @@
             width: 100%;
             outline: none;
             border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
             border: 1px solid #ccc;
-            font-size: 16px;
+            font-size: 100%;
+            box-sizing: border-box;
             border-bottom-width: 2px;
             transition: all 0.3s ease;
             margin: 12px 0 12px 0;
@@ -121,54 +130,99 @@
             text-align: center;
         }
 
-        input[type=submit]{
-            
+        input[type=submit] {
+
             color: white;
             background: linear-gradient(135deg, #71b7e6, #9b59b6);
             border: none;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
-            height: 50px;
+            font-size: 100%;
+            /* height: 50px; */
             width: 600px;
-            cursor: pointer;
             box-sizing: border-box;
+            cursor: pointer;
             border-radius: 0.12em;
-        }
-        input[type=text]{
-            width: 107%;
+            -moz-border-radius: 0.12em;
+            -webkit-border-radius: 0.12em;
+
         }
 
-        input[type=file]{
+        input[type=text] {
+            width: 107%;
+
+        }
+
+        input[type=file] {
             width: 80%;
+            align-items: center;
             margin-left: 5rem;
         }
-        input[type=date]{
+
+        input[type=date] {
             width: 173%;
         }
-        input[type=week]{
+
+        input[type=week] {
             width: 127%;
         }
-        input[type=time]{
+
+        input[type=time] {
             width: 210%;
         }
-        .file_div span{
+
+        .file_div span {
             margin-left: 5rem;
         }
-        
 
 
-        .week_div span{
+
+        .week_div span {
             margin-left: 12px;
         }
-        input[type=submit]{
+
+        input[type=submit] {
             width: 100%;
         }
 
+        @media screen and (min-width: 150px) and (max-width:700px) {
+            .first_div {
+                display: block;
+                width: 100%;
+                height: 100%;
+                margin: 10px 10px 10px 0px;
+            }
+
+            .sec_div {
+                display: block;
+            }
+
+            .third_div {
+                display: block;
+            }
+
+            .fourth_div {
+                display: block;
+            }
+
+            .fifth_div {
+                display: block;
+            }
+
+            .main_div {
+
+                width: 100%;
+                height: auto;
+            }
+
+            input {
+                width: auto;
+                height: auto;
+            }
 
 
-
+        }
     </style>
 </head>
 
