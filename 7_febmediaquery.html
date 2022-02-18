@@ -8,7 +8,44 @@
     <title>Media query</title>
     
     <style>
-        .box {
+        body{
+            border-color: white;
+            font-family: Arial;
+            font-size: 100px
+
+        }
+        @media screen and (max-width:1200px) {
+            body{
+                background-color: pink;
+            font-size: 70px
+
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            body{
+                background-color: red;
+            font-size: 50px
+
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            body{
+                background-color: yellowgreen;
+            font-size: 25px
+
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            body{
+                background-color: yellowgreen;
+            font-size: 14px
+
+            }
+        }
+        /* .box {
             background-color: red;
             font-size: 22px;
             text-align: center;
@@ -27,16 +64,33 @@
                 display: block;
                 background-color: black;
             }
-        }
+        } */
     </style>
 
 </head>
 
 <body>
-    <div class="box" id="box1">i phone</div>
+
+    <header class="mainheader">
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About us </a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+ 
+
+
+
+
+    <!-- <div class="box" id="box1">i phone</div>
     <div class="box" id="box2">tablet</div>
     <div class="box" id="box3">computer</div>
-    <div class="box" id="box4">wide screen computer</div>
+    <div class="box" id="box4">wide screen computer</div> -->
 
 </body>
 
