@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(46, 186, 239);
+            /* background-color: #000305e3; */
+            color: #000305;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 87.5%;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+
+
+        a {
+            text-decoration: none;
+        }
+
+        .body {
+
+            margin: 0 auto;
+            width: 50%;
+            clear: both;
+        }
+
+        .mainheader nav {
+            background-color: rgba(0, 0, 0, 0.678);
+            height: 60px;
+            border-radius: 5px;
+
+
+        }
+
+        .mainheader nav ul {
+            list-style: none;
+            margin: 0 auto;
+
+        }
+
+        .mainheader nav ul li {
+            float: right;
+            display: inline;
+
+        }
+
+        .mainheader nav a:link,
+        .mainheader nav a:visited {
+            color: #fff;
+            display: inline-block;
+            padding: 10px 25px;
+            height: 20px;
+
+        }
+
+        .mainheader nav a:hover,
+        .mainheader nav a:active,
+        .mainheader nav .active a:link,
+        .mainheader nav .active a:visited {
+            background-color: rgb(46, 186, 239);
+            text-shadow: none;
+        }
+
+        .mainheader nav ul li a {
+            border-radius: 5px;
+
+        }
+
+        .mainheader nav a:hover,
+        .mainheader nav a:active,
+        .mainheader nav .active a:link,
+        .mainheader nav .active a:visited {
+            background-color: rgb(46, 186, 239);
+            text-shadow: none;
+        }
+
+        .logo {
+            padding: 10px 25px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .main_div {
+            background-color: white;
+            height: auto;
+            position: relative;
+        }
+
+        .content_div {
+            background-color: rgba(0, 0, 0, 0.76);
+            background-image: url(images.jfif);
+            height: auto;
+            height: 55vh;
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* position: relative;
+            top: 50%;
+            left: 50%; */
+
+        }
+
+        .content_div h1 {
+            position: relative;
+            top: 50%;
+            left: 30%;
+        }
+
+        .content_div p {
+            top: 50%;
+            left: 30%;
+            position: relative;
+        }
+
+
+
+
+        .btn {
+            background-color: rgb(46, 186, 239);
+            border: none;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 12px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 150px;
+            position: relative;
+            top: 51%;
+            left: 40%;
+
+        }
+
+        .services_div {
+            background-color: white;
+            position: relative;
+            padding: 10px 10px;
+
+        }
+
+        .services_div h1 {
+            text-align: center;
+        }
+
+        .Rounded {
+            border-top: 1px solid white;
+            border-radius: 1px;
+            width: 50%;
+            position: relative;
+            left: 25%;
+            padding: 10px 10px;
+            background-color: white;
+
+        }
+
+        .services_div_sec {
+            background-color: white;
+            display: flex;
+            clear: both;
+            width: 70%;
+            justify-content: space-between;
+            margin: auto;
+            padding-top: 10px;
+
+        }
+
+        .services_btn {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 0px 12px 0px;
+
+        }
+
+        .services_btn button {
+            background-color: rgb(46, 186, 239);
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 15px;
+            font-size: 12px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 150px;
+            align-items: center;
+
+
+
+
+        }
+
+        .design_div p {
+            font-size: 0.75em;
+        }
+
+        .design_div img {
+            height: 15%;
+            width: 15%;
+        }
+
+        .security_div img {
+            height: 15%;
+            width: 15%;
+        }
+
+        .incredable_div img {
+            height: 15%;
+            width: 15%;
+        }
+
+        .freash_div img {
+            height: 15%;
+            width: 15%;
+        }
+
+
+        .security_div p {
+            font-size: 0.75em;
+
+        }
+
+        .incredable_div p {
+            font-size: 0.75em;
+        }
+
+        .freash_div p {
+            font-size: 0.75em;
+
+        }
+
+        .lr_div {
+            width: 100%;
+            background-color: white;
+            height: 200px;
+
+        }
+
+        .show_more_div {
+            padding: 10px 10px 10px 10px;
+        }
+
+        .show_more_div button {
+            background-color: rgb(46, 186, 239);
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 15px;
+            font-size: 12px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 100px;
+
+        }
+
+        .lr_div {
+            width: 70%;
+            margin: auto;
+            position: relative;
+            padding-top: 12px;
+        }
+
+        .left_div {
+            float: left;
+            width: 40%;
+            background-color: white;
+            position: relative;
+
+        }
+
+        .left_div p {
+            font-size: 0.75em;
+        }
+
+        .right_div {
+            float: right;
+            width: 40%;
+            background-color: white;
+            position: relative;
+        }
+
+        .right_div img {
+            height: 140%;
+            width: 140%;
+        }
+
+
+
+        .team_div {
+            background-color: white;
+            width: 30%;
+            text-align: center;
+            position: relative;
+            left: 10%;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .team_div_sec {
+            display: flex;
+            justify-content: space-evenly;
+            width: 80%;
+            margin: auto;
+            position: relative;
+            left: 6%;
+
+            top: 10%;
+
+        }
+
+
+
+
+        .team_div_sec img {
+            vertical-align: middle;
+            width: 60%;
+            height: 60%;
+            border-radius: 50%;
+        }
+
+        .team_div_sec button {
+            background-color: rgb(46, 186, 239);
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 15px;
+            font-size: 10px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 80px;
+
+        }
+
+        .profile_name_div {
+
+            padding-left: 12px;
+        }
+
+        .profile_btn_div {
+
+            padding-left: 10px;
+        }
+
+        .contact_div {
+
+            background-image: url(download_3.jfif);
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.76);
+
+        }
+
+        .lft_div {
+            float: left;
+            left: 10%;
+            width: 50%;
+            position: absolute;
+            top: 15%;
+
+
+        }
+
+        .add_mail_num_div {
+            padding-top: 2rem;
+        }
+
+        .gmail_div {
+            padding-top: 12px;
+        }
+
+        .icons_div {
+            padding-top: 12px;
+        }
+
+        .phone_num_div {
+            padding-top: 12px;
+        }
+
+        .icons_div {
+            padding-top: 2rem;
+        }
+
+        .icons_div img {
+            height: 10%;
+            width: 10%;
+            border-radius: 50%;
+        }
+
+        .lft_div h1 {
+            font-size: 2.9em;
+        }
+
+        .rght_div {
+            float: right;
+            width: 50%;
+            top: 15%;
+            position: relative;
+
+        }
+
+
+        .input_div input {
+            height: 45px;
+            width: 80%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px;
+            font-size: 100%;
+            box-sizing: border-box;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+            margin: 12px 0 12px 0;
+            font-family: 'Roboto', sans-serif;
+            text-align: left;
+            padding-left: 10px;
+            background-color: rgba(0, 0, 0, 0.295);
+
+        }
+
+        .msg_btn {
+            text-align: center;
+            width: 80%;
+        }
+
+        .msg_btn button {
+            background-color: rgb(46, 186, 239);
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 15px;
+            font-size: 12px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 100px;
+        }
+
+
+        /* .footer_div_lr{
+            margin: 0;
+            background-color: black;
+        } */
+        .footer {
+            margin-top: 20px;
+            color: white;
+            line-height: 60px;
+            text-align: right;
+            padding-right: 1rem;
+            line-height: 0 60px;
+            background-color: black;
+            margin: 0;
+            /* float: right; */
+
+        }
+
+        /* .footer_right_div{
+            float: left;
+            width: 50%;
+            background-color: black;
+        } */
+            
+
+            @media screen and (min-width: 320px) and (max-width:720px) {
+
+                .mainheader nav {
+
+                    height: 160px;
+
+                }
+
+                .mainheader nav ul {
+                    padding-left: 0;
+
+                }
+
+                .mainheader nav ul li {
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+
+                .mainheader nav a:link,
+                .mainheader nav a:visited {
+                    padding: 10px 25px;
+                    height: 20px;
+                    display: block;
+
+                }
+
+                .main_div {
+                    width: 100%;
+                    height: auto;
+
+                }
+
+                .content {
+                    height: 100%;
+                    width: 100%;
+
+                }
+
+                .Rounded {
+                    width: 100%;
+
+                }
+
+                .services_div_sec {
+
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+
+                }
+
+                .lr_div {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .lr_div {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .left_div {
+                    width: 100%;
+
+                }
+
+                .right_div {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .right_div img {
+
+                    width: 100%;
+                    height: auto;
+                }
+
+                .team_div {
+
+                    width: 100%;
+                }
+
+                .team_div_sec {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                }
+
+                .team_div_sec img {
+
+                    width: 100%;
+                    height: auto;
+                }
+
+                .contact_div {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .lft_div {
+                    width: 100%;
+                    height: auto;
+
+                }
+
+                .rght_div {
+                    width: 100%;
+                    height: auto;
+
+                }
+
+
+                .input_div input {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+    </style>
+</head>
+
+<body class="body">
+
+    <header class="mainheader">
+        <nav>
+            <label class="logo">Austera</label>
+            <ul>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li class="active"><a href="#">Services</a></li>
+                <li><a href="#">HomePage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="main_div">
+        <div class="content_div">
+            <h1> Austera simple PSD Template </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+            <button class="btn">Learn More</button>
+        </div>
+
+
+
+        <div class="services_div">
+            <h1>Our services</h1>
+            <hr class="Rounded">
+        </div>
+        <div class="services_div_sec">
+
+            <div class="design_div">
+                <img src="images.png">
+                <h3>Responsive Design</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptates dolorum iusto, delectus iure nobis qui doloribus
+                    ex mollitia illo culpa, sequi odio inventore
+                    labore asperiores rem in accusamus iste explicabo.</p>
+            </div>
+
+            <div class="security_div">
+                <img src="images.png">
+                <h3>Endless Security</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptates dolorum iusto, delectus iure nobis qui doloribus
+                    ex mollitia illo culpa, sequi odio inventore
+                    labore asperiores rem in accusamus iste explicabo.</p>
+            </div>
+
+            <div class="incredable_div">
+                <img src="images.png">
+                <h3>incrediable Features</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptates dolorum iusto, delectus iure nobis qui doloribus
+                    ex mollitia illo culpa, sequi odio inventore
+                    labore asperiores rem in accusamus iste explicabo.</p>
+            </div>
+            <div class="freash_div">
+                <img src="images.png">
+                <h3>Fresh ideas</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptates dolorum iusto, delectus iure nobis qui doloribus
+                    ex mollitia illo culpa, sequi odio inventore
+                    labore asperiores rem in accusamus iste explicabo.</p>
+
+            </div>
+
+
+        </div>
+        <div class="services_btn">
+            <button>Check Services</button>
+        </div>
+
+
+
+
+        <div class="lr_div">
+            <div class="left_div">
+                <h2>Lorem ipsum, dolor sit amet</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis non nulla culpa nam debitis
+                    rerum, explicabo nihil architecto quam quidem expedita. Magni, dicta voluptatem voluptatibus sed
+                    impedit odio quia obcaecati.</p>
+                <div class="show_more_div">
+                    <button>Show More</button>
+                </div>
+            </div>
+            <div class="right_div">
+                <img src="download.jfif">
+
+            </div>
+        </div>
+
+        <div class="team_div">
+            <h2 style="font-size: 35px;">Check Our</h2>
+            <h2 style="color: rgb(46, 186, 239); font-size: 35px;">Awesome team</h2>
+        </div>
+
+
+        <div class="team_div_sec">
+            <div class="profile_div">
+                <img src="download_1.jfif">
+                <div class="profile_name_div">
+                    <h3>John Doe</h3>
+                </div>
+                <div class="profile_btn_div"><button>Check Profile</button></div>
+            </div>
+
+            <div class="profile_div">
+                <img src="download_1.jfif">
+                <div class="profile_name_div">
+                    <h3>John Doe</h3>
+                </div>
+                <div class="profile_btn_div"><button>Check Profile</button></div>
+            </div>
+
+            <div class="profile_div">
+                <img src="download_1.jfif">
+                <div class="profile_name_div">
+                    <h3>John Doe</h3>
+                </div>
+                <div class="profile_btn_div"><button>Check Profile</button></div>
+            </div>
+
+            <div class="profile_div">
+                <img src="download_1.jfif">
+                <div class="profile_name_div">
+                    <h3>John Doe</h3>
+                </div>
+                <div class="profile_btn_div"><button>Check Profile</button></div>
+
+            </div>
+        </div>
+
+
+        <div>
+            <div class="contact_div">
+                <div class="lft_div">
+                    <div>
+                        <h1 style="color: white;">Contact With Us</h1>
+                    </div>
+                    <div class="add_mail_num_div">
+                        <div>
+                            <p>Plot No, DLF mall of India, E-21 F26, M03, Sector 18</p>
+                        </div>
+                        <div class="phone_num_div">
+                            <p style="color: rgb(46, 186, 239);"> Phone : 80538877877</p>
+                        </div>
+                        <div class="gmail_div">
+                            <p style="color: rgb(46, 186, 239);;"> Email Id : Rakhichauhan094@gmail.com</p>
+                        </div>
+
+                    </div>
+
+                    <div class="icons_div">
+                        <img src="twitter.png">
+                        <img src="facebook.png">
+                        <img src="gmail.png">
+                        <img src="twitter.png">
+                        <img src="twitter.png">
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="rght_div">
+                    <div class="input_div"><input type="text" placeholder="Your Name">
+                        <div>
+                            <div><input type="text" placeholder="Your Mail Id"></div>
+                            <div><input type="text" placeholder="Your Message" style="height:130px;"></div>
+                        </div>
+                        <div class="msg_btn"><button>Send Messge</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <footer>@Copyright Rakhichauhan094</footer>
+            </div>
+   
+
+
+            <!-- <div class="footer_right_div">
+                <ul>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">HomePage</a></li>
+                </ul>
+
+            </div>
+            </div> -->
+</body>
+
+
+</html>
