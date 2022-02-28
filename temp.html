@@ -11,19 +11,17 @@
         * {
             margin: 0;
             padding: 0;
+
         }
 
-        body {
+        /* body {
             background-color: rgb(46, 186, 239);
-            /* background-color: #000305e3; */
             color: #000305;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 87.5%;
             line-height: 1.5;
             text-align: left;
-        }
-
-
+        } */
 
         a {
             text-decoration: none;
@@ -32,8 +30,10 @@
         .body {
 
             margin: 0 auto;
-            width: 50%;
+            width: 100%;
             clear: both;
+            height: 100%;
+            overflow-x: hidden;
         }
 
         .mainheader nav {
@@ -97,24 +97,23 @@
         .content_div {
             background-color: rgba(0, 0, 0, 0.76);
             background-image: url(images.jfif);
-            height: auto;
-            height: 55vh;
+            /* height: auto; */
+            height: 60vh;
             background-repeat: no-repeat;
             background-size: cover;
-
         }
 
         .content_div h1 {
             position: relative;
             top: 50%;
-            left: 25%;
+            left: 40%;
             color: white;
             font-size: 2vw;
         }
 
         .content_div p {
             top: 50%;
-            left: 30%;
+            left: 40%;
             position: relative;
             color: white;
         }
@@ -132,7 +131,7 @@
             width: 150px;
             position: relative;
             top: 51%;
-            left: 40%;
+            left: 47%;
 
         }
 
@@ -145,13 +144,17 @@
 
         .services_div h1 {
             text-align: center;
+            font-size: 3vw;
+            margin-bottom: 12px;
+            font-weight: bold;
+
         }
 
         .services_div_sec {
             background-color: white;
             display: flex;
             clear: both;
-            width: 70%;
+            width: 80%;
             justify-content: space-between;
             margin: auto;
             padding-top: 10px;
@@ -180,41 +183,41 @@
         }
 
         .design_div p {
-            font-size: 0.75em;
+            font-size: 0.90em;
         }
 
         .design_div img {
-            height: 15%;
-            width: 15%;
+            height: 20%;
+            width: 20%;
         }
 
         .security_div img {
-            height: 15%;
-            width: 15%;
+            height: 20%;
+            width: 20%;
         }
 
         .incredable_div img {
-            height: 15%;
-            width: 15%;
+            height: 20%;
+            width: 20%;
         }
 
         .freash_div img {
-            height: 15%;
-            width: 15%;
+            height: 20%;
+            width: 20%;
         }
 
 
         .security_div p {
-            font-size: 0.75em;
+            font-size: 0.90em;
 
         }
 
         .incredable_div p {
-            font-size: 0.75em;
+            font-size: 0.90em;
         }
 
         .freash_div p {
-            font-size: 0.75em;
+            font-size: 0.90em;
 
         }
 
@@ -238,35 +241,36 @@
         }
 
         .lr_div {
-            width: 80%;
+            width: 90%;
             display: grid;
             background-color: white;
-            height: 200px;
+            height: 500px;
             margin: auto;
             grid-template-columns: auto auto;
             position: relative;
             padding-top: 12px;
-
         }
 
         .left_div {
-            left: 10%;
+            left: 8%;
             position: relative;
-            width: 75%;
-
+            width: 50%;
+            top: 20%;
         }
 
         .left_div p {
-            font-size: 0.75em;
+            font-size: 0.90em;
         }
 
         .right_div {
             position: relative;
+            right: 20%;
+            top: 20%;
 
         }
 
         .right_div img {
-            height: 100%;
+            height: 60%;
             width: 100%;
         }
 
@@ -275,17 +279,17 @@
             width: 30%;
             text-align: center;
             position: relative;
-            left: 10%;
+            left: 6%;
+            margin-top: 12px;
             /* padding: 10px 10px 10px 10px; */
         }
 
         .team_div_sec {
             display: flex;
             justify-content: space-evenly;
-            width: 80%;
+            width: 90%;
             margin: auto;
             position: relative;
-            left: 6%;
             top: 10%;
             margin-bottom: 1rem;
 
@@ -293,8 +297,8 @@
 
         .team_div_sec img {
             vertical-align: middle;
-            width: 60%;
-            height: 60%;
+            width: 70%;
+            height: 70%;
             border-radius: 50%;
         }
 
@@ -310,13 +314,14 @@
             font-size: 10px;
             margin: 4px 2px;
             cursor: pointer;
-            width: 80px;
+            width: 90px;
 
         }
 
         .profile_name_div {
+            position: relative;
+            left: 10%;
 
-            padding-left: 12px;
         }
 
         .profile_btn_div {
@@ -328,7 +333,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             background-image: url(download_3.jfif);
-            height: 500px;
+            height: 100vh;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -360,16 +365,14 @@
 
         .contact_left_sec_div {
             left: 10%;
-
             position: absolute;
-            top: 15%;
+            top: 40%;
         }
 
         .icons_div {
             left: 10%;
-
             position: absolute;
-            top: 55%;
+            top: 60%;
         }
 
         .icons_div img {
@@ -381,7 +384,7 @@
         .contact_right_sec_div {
             left: 5%;
             position: relative;
-            top: 15%;
+            top: 38%;
         }
 
         .input_div input {
@@ -389,15 +392,14 @@
             width: 80%;
             outline: none;
             border-radius: 5px;
-            border: 1px;
+            border: 1px solid white;
             font-size: 100%;
             box-sizing: border-box;
             border-bottom-width: 2px;
             transition: all 0.3s ease;
             margin: 12px 0 12px 0;
             font-family: 'Roboto', sans-serif;
-            /* text-align: left; */
-            /* padding-left: 10px; */
+            color: white;
             background-color: rgba(0, 0, 0, 0.295);
 
         }
@@ -459,15 +461,20 @@
             }
 
             .team_div {
-                width: 40%;
-
+                width: 100%;
             }
 
             .contact_left_sec_div h1 {
                 font-size: 5vw;
             }
 
+            .contact_left_sec_div {
+                top: 15%;
+            }
 
+            .contact_right_sec_div {
+                top: 15%;
+            }
         }
 
         @media screen and (max-width: 1024px) {
@@ -481,6 +488,15 @@
 
             .content_div h1 {
                 font-size: 3vw;
+                left: 30%;
+            }
+
+            .content_div p {
+                left: 30%;
+            }
+
+            .content_div button {
+                left: 40%;
             }
 
             .footer_right_div {
@@ -494,20 +510,22 @@
             .team_div {
                 width: 40%;
             }
+
+            .contact_left_sec_div {
+                top: 15%;
+            }
+
+            .contact_right_sec_div {
+                top: 15%;
+            }
         }
+
+
 
         @media screen and (max-width: 425px) {
 
             .mainheader nav {
-
-                height: 160px;
-
-            }
-
-            .material-icons{
-               
-                position: relative;
-                right: 48%;
+                height: 180px;
             }
 
             .mainheader nav ul {
@@ -519,6 +537,8 @@
                 width: 100%;
                 margin: 0 auto;
                 text-align: center;
+                display: block;
+
             }
 
             .mainheader nav a:link,
@@ -529,380 +549,168 @@
 
             }
 
-            .body {
-                margin: auto;
-                width: 100%;
-                clear: both;
-
-            }
-
             .main_div {
+                background-color: white;
                 height: auto;
                 width: 100%;
+                position: relative;
+            }
+
+            .content_div {
+                background-color: rgba(0, 0, 0, 0.76);
+                background-image: url(images.jfif);
+                height: auto;
+                height: 55vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+
             }
 
             .content_div h1 {
-                top: 20%;
-                left: 25%;
-                font-size: 4vw;
+
+                top: 5%;
+                left: 16%;
+                font-size: 6vw;
             }
 
             .content_div p {
-                top: 21%;
-                left: 25%;
-                font-size: 2vw;
-
+                top: 8%;
+                left: 15%;
             }
 
             .btn {
-                top: 22%;
-                left: 40%;
+                top: 9%;
+                left: 35%;
             }
 
             .services_div_sec {
+                flex-direction: column;
 
+            }
+
+            .services_div h1 {
+            
+            font-size: 6vw;
+            
+        }
+
+
+
+            .lr_div {
+                grid-template-columns: auto;
+
+            }
+
+            .left_div {
+                left: 8%;
+                position: relative;
+                width: 70%;
+
+            }
+
+            .left_div p {
+                font-size: 0.95em;
+            }
+
+            .right_div {
+                left: 0.1%;
+                margin-top: 12px;
+            }
+
+            .right_div img {
+                height: 90%;
+                width: 90%;
+            }
+
+            .team_div {
                 width: 90%;
 
             }
 
-            .design_div img {
-                height: 10%;
-                width: 15%;
-            }
-
-            .security_div img {
-                height: 10%;
-                width: 15%;
-            }
-
-            .incredable_div img {
-                height: 10%;
-                width: 15%;
-            }
-
-            .freash_div img {
-                height: 10%;
-                width: 15%;
-            }
-
-            .right_div img {
-                height: 80%;
-                width: 100%;
-            }
-
-
-            .team_div {
-                width: 80%;
-
-            }
-
             .team_div_sec {
 
-                right: 15%;
-
-
-            }
-
-            .lr_div {
-                width: 100%;
-                height: auto;
-            }
-
-            .right_div {
-                margin-right: 10px;
-
-            }
-
-            .right_div img {
-                height: 80%;
-                width: 100%;
+                flex-direction: column;
+                left: 15%;
             }
 
 
-            .team_div_sec button {
+
+            .profile_name_div {
+
+                left: 22%;
+
+            }
+
+            .profile_btn_div {
+                left: 20%;
+                padding-left: 10px;
                 position: relative;
-                right: 25%;
             }
-
-            .team_div_sec h3 {
-                position: relative;
-                right: 25%;
-            }
-
-
 
             .contact_div {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .msg_btn {
-                text-align: center;
-                width: 80%;
-            }
-
-            .msg_btn button {
-                background-color: rgb(46, 186, 239);
-                border: none;
-                color: white;
-                padding: 10px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                border-radius: 15px;
-                font-size: 12px;
-                margin: 4px 2px;
-                cursor: pointer;
-                width: 100px;
+                grid-template-columns: 1fr;
             }
 
             .contact_left_sec_div {
-                left: 9%;
-                width: 35%;
-                position: absolute;
-                top: 15%;
-            }
-
-            .contact_right_sec_div {
                 left: 10%;
-                top: 10%;
-                width: 100%;
-            }
-
-            .icons_div img {
-                height: 8%;
-                width: 8%;
-
-            }
-
-
-            .footer_grid_div {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-
-
-            }
-
-            .footer_left_div ul {
-                list-style: none;
-                margin: 0 auto;
-            }
-
-            .footer_left_div li {
-                float: left;
-                display: inline;
-                padding: 10px;
-            }
-
-            .footer_right_div {
-                width: 50%;
-
-            }
-
-            .footer_left_div {
-                width: 50%;
-            }
-
-        }
-
-        @media screen and (max-width: 375px) {
-
-            .mainheader nav {
-
-                height: 160px;
-                width: 100%;
-
-            }
-
-            .mainheader nav ul {
-                padding-left: 0;
-
-            }
-
-            .material-icons{
-                font-size:36px; 
-                float: right; 
-                padding-right: 10px; 
-                color: white; 
-                padding-top: 18px; 
-            }
-
-            .mainheader nav ul li {
-                width: 100%;
-                margin: 0 auto;
-                text-align: center;
-            }
-
-            .mainheader nav a:link,
-            .mainheader nav a:visited {
-                padding: 10px 25px;
-                height: 20px;
-                display: block;
-
-            }
-
-            .body {
-                margin: 0 auto;
-                width: 100%;
-                clear: both;
-
-
-            }
-
-            .main_div {
-                height: auto;
-                width: 100%;
-                padding-right: 0;
-                padding-left: 0;
-
-            }
-
-            .content_div h1 {
-                top: 20%;
-                left: 25%;
-                font-size: 4vw;
-            }
-
-            .content_div p {
-                top: 21%;
-                left: 25%;
-                font-size: 2vw;
-
-            }
-
-            .btn {
-                top: 22%;
-                left: 30%;
-            }
-
-            .design_div img {
-                height: 10%;
-                width: 15%;
-            }
-
-            .security_div img {
-                height: 10%;
-                width: 15%;
-            }
-
-            .incredable_div img {
-                height: 10%;
-                width: 15%;
-            }
-
-            .freash_div img {
-                height: 10%;
-                width: 15%;
-            }
-
-            .right_div img {
-                height: 80%;
-                width: 100%;
-            }
-
-
-            .team_div {
-                width: 80%;
-            }
-
-            .team_div_sec {
-                width: 60%;
-                left: 5px;
-
-            }
-
-            .team_div_sec button {
-                
-                margin: auto;
-            }
-
-            .team_div_sec h3 {
-               margin: auto;
-            }
-
-
-
-            .contact_div {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .msg_btn {
-                text-align: center;
-                width: 80%;
-            }
-
-            .msg_btn button {
-                background-color: rgb(46, 186, 239);
-                border: none;
-                color: white;
-                padding: 10px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                border-radius: 15px;
-                font-size: 12px;
-                margin: 4px 2px;
-                cursor: pointer;
-                width: 100px;
-            }
-
-            .contact_left_sec_div {
-                left: 5%;
-                width: 35%;
                 position: absolute;
-                top: 15%;
+                top: 3%;
             }
-
-            .contact_right_sec_div {
-                /* left: 10%; */
-                top: 10%;
-
-                width: 100%;
-            }
-
-            .icons_div img {
-                height: 8%;
-                width: 8%;
-
+            .contact_left_sec_div h1{
+                font-size: 9vw;
             }
 
             .icons_div {
-                left: 5%;
+                left: 10%;
+                top: 25%;
             }
 
+            .icons_div img {
+                height: 8%;
+                width: 8%;
+            }
+
+            .contact_right_sec_div {
+                left: 9%;
+                top: 18%;
+            }
 
             .footer_grid_div {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-
-
-            }
-
-            .footer_left_div ul {
-                list-style: none;
-                margin: 0 auto;
-            }
-
-            .footer_left_div li {
-                float: left;
-                display: inline;
-                padding: 10px;
+                grid-template-columns: 1fr;
             }
 
             .footer_right_div {
-                width: 50%;
+                text-align: left;
+                margin-left: 12px;
 
             }
+        }
 
-            .footer_left_div {
-                width: 50%;
+        @media screen and (max-width: 375px) {
+            .content_div h1 {
+
+                top: 5%;
+                left: 10%;
+                font-size: 6vw;
+            }
+
+            .content_div p {
+                top: 8%;
+                left: 10%;
+            }
+
+            .content_div button {
+                top: 9%;
+                left: 25%;
+            }
+
+            .left_div {
+
+                top: 10%;
             }
 
 
         }
-
-        @media screen and (max-width: 320px) {}
     </style>
 </head>
 
@@ -912,7 +720,8 @@
         <nav>
 
             <ul>
-                <i class="material-icons"style="font-size:36px; float: right; padding-right: 10px; color: white; padding-top: 18px; ">pageview</i>
+                <!-- <i class="material-icons"
+                    style="font-size:36px; float: right; padding-right: 10px; color: white; padding-top: 18px; ">pageview</i> -->
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">About Us</a></li>
                 <li class="active"><a href="#">Services</a></li>
@@ -1003,9 +812,9 @@
         </div>
 
         <div class="team_div">
-            <h2 style="font-size: 35px;">Check Our</h2>
+            <h2 style="font-size: 60px;">Check Our</h2>
 
-            <h2 style="color: rgb(46, 186, 239); font-size: 35px; margin-left: 20px; margin-bottom: 12px;">Awesome team
+            <h2 style="color: rgb(46, 186, 239); font-size: 60px; margin-left: 20px; margin-bottom: 12px;">Awesome team
             </h2>
         </div>
 
