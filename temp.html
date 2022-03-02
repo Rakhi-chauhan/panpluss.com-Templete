@@ -35,6 +35,9 @@
             height: 100%;
             overflow-x: hidden;
         }
+        .material-icons{
+            display: none;
+        }
 
         .mainheader nav {
             background-color: black;
@@ -86,12 +89,12 @@
             text-shadow: none;
         }
 
-
         .main_div {
             background-color: white;
             height: auto;
             width: 100%;
             position: relative;
+            overflow: hidden;
         }
 
         .content_div {
@@ -101,21 +104,24 @@
             height: 60vh;
             background-repeat: no-repeat;
             background-size: cover;
+            overflow: hidden;
         }
 
         .content_div h1 {
             position: relative;
             top: 50%;
-            left: 40%;
+            left: 25%;
             color: white;
-            font-size: 2vw;
+            font-size: 4vw;
+            
         }
 
         .content_div p {
             top: 50%;
-            left: 40%;
+            left: 35%;
             position: relative;
             color: white;
+            
         }
 
         .btn {
@@ -131,7 +137,7 @@
             width: 150px;
             position: relative;
             top: 51%;
-            left: 47%;
+            left: 43%;
 
         }
 
@@ -205,7 +211,6 @@
             height: 20%;
             width: 20%;
         }
-
 
         .security_div p {
             font-size: 0.90em;
@@ -339,13 +344,12 @@
             background-size: cover;
             position: relative;
             background-color: rgba(0, 0, 0, 0.76);
-
-
         }
 
         .msg_btn {
             text-align: center;
             width: 80%;
+            overflow: hidden;
         }
 
         .msg_btn button {
@@ -437,17 +441,18 @@
         @media screen and (max-width: 768px) {
 
             .body {
-
-
                 margin: 0 auto;
                 width: 100%;
                 clear: both;
-
-
+                overflow-x: hidden;
             }
 
             .content_div h1 {
-                font-size: 4vw;
+                font-size: 6vw;     
+            }
+            .content_div p{
+                left: 25%;
+                font-size: 0.75em;
             }
 
             .contact_right_sec_div {
@@ -475,6 +480,10 @@
             .contact_right_sec_div {
                 top: 15%;
             }
+
+            .services_div_sec {
+                justify-content: space-between;
+            }
         }
 
         @media screen and (max-width: 1024px) {
@@ -482,21 +491,33 @@
             .body {
                 margin: 0 auto;
                 width: 100%;
-                clear: both;
-
+                overflow-x: hidden;
             }
 
+            .content_div {
+                width: 100%;
+            }
             .content_div h1 {
-                font-size: 3vw;
-                left: 30%;
+                font-size: 4vw;
+                
+                left: 25%;
             }
 
             .content_div p {
-                left: 30%;
+                left: 35%;
             }
 
             .content_div button {
-                left: 40%;
+                left: 45%;
+            }
+
+            .team_div_sec {
+                left: 5%;
+
+            }
+
+            .services_div_sec {
+                justify-content: space-between;
             }
 
             .footer_right_div {
@@ -520,12 +541,10 @@
             }
         }
 
-
-
         @media screen and (max-width: 425px) {
 
             .mainheader nav {
-                height: 180px;
+                height: 75px;
             }
 
             .mainheader nav ul {
@@ -537,9 +556,13 @@
                 width: 100%;
                 margin: 0 auto;
                 text-align: center;
-                display: block;
-
+                display: none;
             }
+            .material-icons{
+            display: inline;
+            margin-right: 12px;
+        }
+            
 
             .mainheader nav a:link,
             .mainheader nav a:visited {
@@ -563,24 +586,24 @@
                 height: 55vh;
                 background-repeat: no-repeat;
                 background-size: cover;
-
             }
 
             .content_div h1 {
 
-                top: 5%;
-                left: 16%;
-                font-size: 6vw;
+                top: 17%;
+                left: 5%;
+                font-size: 7vw;
             }
 
             .content_div p {
-                top: 8%;
+                top: 17%;
                 left: 15%;
+                font-size: 0.75em;
             }
 
-            .btn {
-                top: 9%;
-                left: 35%;
+            .content_div button  {
+                top: 18%;
+                left: 28%;
             }
 
             .services_div_sec {
@@ -589,12 +612,9 @@
             }
 
             .services_div h1 {
-            
-            font-size: 6vw;
-            
-        }
+                font-size: 6vw;
 
-
+            }
 
             .lr_div {
                 grid-template-columns: auto;
@@ -633,8 +653,6 @@
                 left: 15%;
             }
 
-
-
             .profile_name_div {
 
                 left: 22%;
@@ -656,7 +674,8 @@
                 position: absolute;
                 top: 3%;
             }
-            .contact_left_sec_div h1{
+
+            .contact_left_sec_div h1 {
                 font-size: 9vw;
             }
 
@@ -688,15 +707,14 @@
 
         @media screen and (max-width: 375px) {
             .content_div h1 {
-
                 top: 5%;
-                left: 10%;
-                font-size: 6vw;
+                left: 7%;
+                font-size: 7vw;
             }
 
             .content_div p {
                 top: 8%;
-                left: 10%;
+                left: 15%;
             }
 
             .content_div button {
@@ -705,11 +723,8 @@
             }
 
             .left_div {
-
                 top: 10%;
             }
-
-
         }
     </style>
 </head>
@@ -720,8 +735,8 @@
         <nav>
 
             <ul>
-                <!-- <i class="material-icons"
-                    style="font-size:36px; float: right; padding-right: 10px; color: white; padding-top: 18px; ">pageview</i> -->
+                <i class="material-icons"
+                    style="font-size:36px; float: right; padding-right: 10px; color: white; padding-top: 18px; ">menu</i>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">About Us</a></li>
                 <li class="active"><a href="#">Services</a></li>
@@ -741,7 +756,7 @@
 
 
         <div class="services_div">
-            <h1>Our services</h1>
+            <h1>Our Services</h1>
             <hr style="width:50%;text-align:center;margin: auto;">
         </div>
 
@@ -751,18 +766,16 @@
                 <img src="images.png">
                 <h3>Responsive Design</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Voluptates dolorum iusto, delectus iure nobis qui doloribus
-                    ex mollitia illo culpa, sequi odio inventore
-                    labore asperiores rem in accusamus iste explicabo.</p>
+                    Voluptates dolorum iusto delectus iure nobis qui doloribus
+                    .
             </div>
 
             <div class="security_div">
                 <img src="images.png">
                 <h3>Endless Security</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Voluptates dolorum iusto, delectus iure nobis qui doloribus
-                    ex mollitia illo culpa, sequi odio inventore
-                    labore asperiores rem in accusamus iste explicabo.</p>
+                    Voluptates dolorum iusto delectus iure nobis qui doloribus
+                    .</p>
             </div>
 
             <div class="incredable_div">
@@ -770,8 +783,7 @@
                 <h3>incrediable Features</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Voluptates dolorum iusto, delectus iure nobis qui doloribus
-                    ex mollitia illo culpa, sequi odio inventore
-                    labore asperiores rem in accusamus iste explicabo.</p>
+                    .</p>
             </div>
 
             <div class="freash_div">
@@ -779,8 +791,7 @@
                 <h3>Fresh ideas</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Voluptates dolorum iusto, delectus iure nobis qui doloribus
-                    ex mollitia illo culpa, sequi odio inventore
-                    labore asperiores rem in accusamus iste explicabo.</p>
+                    .</p>
             </div>
 
 
