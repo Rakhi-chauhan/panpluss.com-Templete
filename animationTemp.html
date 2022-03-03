@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animated.css/4.1.0/animated.min.css" />
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background-image: url(taj_mahal.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: 15vh;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        nav .logo {
+            width: 25%;
+            text-align: center;
+        }
+
+        nav .menu {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav .menu a {
+            width: 25%;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav .menu a :first-child {
+            color: #00b894;
+        }
+
+        main {
+            width: 100%;
+            height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        section h1 {
+            font-size: 55px;
+            font-weight: 700;
+            margin: 30px 0px 20px 0px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px black;
+
+        }
+
+        section h3 {
+            font-size: 35px;
+            font-weight: 200;
+            letter-spacing: 3px;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        section p {
+            font-size: 25px;
+            color: #eee;
+            word-spacing: 2px;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 2px black;
+
+        }
+
+        section a {
+            padding: 12px 30px;
+            border-radius: 4px;
+            outline: none;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            word-spacing: 1px;
+            transition: all .5s ease;
+        }
+
+        section .btn_one {
+            background-color: #00b894;
+            color: white;
+        }
+
+         .btn_one :hover {
+            background-color: #00b894;
+            color: white;
+        }
+
+        section .btn_two {
+            background-color: #00b894;
+            color: white;
+
+        }
+
+         .btn_two :hover {
+            background-color: #00b894;
+            color: white;
+        }
+
+        .change_content:after {
+            content: "";
+            animation: changetext 10s infinite linear;
+            color: #00b894;
+        }
+
+        .heart {
+            animation: beat .25s infinite alternate;
+            transform-origin: center;
+        }
+
+        @keyframes changetext {
+            0% {
+                content: "Haryana";
+            }
+
+            20% {
+                content: "Delhi";
+            }
+
+            30% {
+                content: "Goa";
+            }
+
+            60% {
+                content: "Chhattisgarh";
+            }
+
+            80% {
+                content: "Punjab";
+            }
+
+            100% {
+                content: "Rajasthan";
+            }
+        }
+
+        @keyframes beat {
+            to {
+                transform: scale(1.4);
+            }
+        }
+    </style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 class="heart">My India</h1>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <h3>Welcome to India</h3>
+                <h1>Do come and Visit <span class="change_content"></span></h1>
+                <p>"India once is not enough"</p>
+                <a href="#" class="btn_one">Learn More</a>
+                <a href="#" class="btn_two">SigUp Here</a>
+            </section>
+        </main>
+    </header>
+</body>
+
+</html>
