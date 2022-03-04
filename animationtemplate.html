@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animated.css/4.1.0/animated.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        body {
+            background-image: url(bgholi.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100% 135%;
+        }
+
+        .main_div {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .main_div h1 {
+            text-align: center;
+            color: #ed065e;
+            font-size: 6em;
+            position: relative;
+            top: 10%;
+
+        }
+
+        .main_div hr {
+            width: 50%;
+            height: 5px;
+            background-color: #0ceef8;
+            position: absolute;
+            top: 30%;
+            border: none;
+            left: 25%;
+        }
+
+        .holiandNote {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            height: 350px;
+        }
+
+        .holi_image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            position: relative;
+            top: 150px;
+            translate: -80px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+            animation: animate .25s infinite alternate;
+            transform-origin: center;
+        }
+
+        .note_div h2 {
+            text-align: right;
+            position: relative;
+            top: 100px;
+            right: 100px;
+            letter-spacing: 3px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .bird_fly1 {
+            animation: fly 10s infinite;
+            position: absolute;
+            top: 35%;
+            animation-duration: 30s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+
+        }
+
+        .bird_fly2 {
+            animation: flys 10s infinite;
+            position: absolute;
+            top: 35%;
+            animation-duration: 30s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+        }
+
+        /* 
+         @keyframes fly {
+            0% {
+                margin-top: -50px;
+            }
+
+            15% {
+                margin-top: -50px;
+                margin-left: 60px;
+
+            }
+
+            30% {
+                margin-top: -50px;
+                left: 60px;
+
+            }
+
+            45% {
+                margin-top: -50px;
+                margin-left: 70px;
+
+            }
+
+            60% {
+                margin-top: -50px;
+                margin-left: 60px;
+
+            }
+
+            75% {
+                margin-top: -50px;
+                margin-left: 50px;
+
+            }
+
+            100% {
+                margin-top: -50px;
+                margin-left: 50px;
+
+            }
+        }  */
+
+        @keyframes flys {
+            0% {
+                margin-top: 350px;
+                margin-right: 100px;
+            }
+            
+
+            /* 15%{
+               margin-top: 50px;
+               margin-left: -10px;
+            }
+            30%{
+                margin-top: -70px;
+                margin-left: -10px;
+            } */
+
+
+
+        }
+
+        @keyframes animate {
+            to {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <br>
+        <h1 class="animated">Happy Holi</h1>
+        <hr>
+
+        <div class="holiandNote">
+            <div class="left_bird">
+                <img src="birdfly.gif" width="50px" class="bird_fly1">
+            </div>
+            <div class="note_div">
+                <h2>Red, Green, Yellow & Blue…<br>
+                    The Colors of Holi remind me of you…<br>
+                    ‘Coz just like them you are so vibrant &<br>
+                    full of fun.!</h2>
+            </div>
+            <div>
+                <img src="holi.jfif" class="holi_image">
+            </div>
+            <div class="right_bird">
+                <img src="birdfly.gif" width="50px" class="bird_fly2">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

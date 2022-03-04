@@ -24,7 +24,7 @@
             background-size: cover;
         }
 
-        nav {
+        nav{
             background-color: rgba(0, 0, 0, 0.2);
             width: 100%;
             height: 15vh;
@@ -35,28 +35,27 @@
             text-transform: uppercase;
         }
 
-        nav .logo {
+        nav .logo{
             width: 25%;
             text-align: center;
         }
 
-        nav .menu {
+        nav .menu{
             width: 40%;
             display: flex;
             justify-content: space-around;
         }
 
-        nav .menu a {
+        nav .menu a{
             width: 25%;
             text-decoration: none;
             color: white;
             font-weight: bold;
         }
 
-        nav .menu a :first-child {
-            color: #00b894;
+        nav .menu a:first-child{
+            color: #00b894;    
         }
-
         main {
             width: 100%;
             height: 85vh;
@@ -73,7 +72,6 @@
             margin: 30px 0px 20px 0px;
             text-transform: uppercase;
             text-shadow: 1px 1px 2px black;
-
         }
 
         section h3 {
@@ -89,7 +87,6 @@
             word-spacing: 2px;
             margin-bottom: 25px;
             text-shadow: 1px 1px 2px black;
-
         }
 
         section a {
@@ -104,25 +101,22 @@
             transition: all .5s ease;
         }
 
-        section .btn_one {
+        section .hover_effect_one {
             background-color: #00b894;
             color: white;
         }
 
-         .btn_one :hover {
+        .hover_effect_one:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        section .hover_effect_two {
             background-color: #00b894;
             color: white;
         }
 
-        section .btn_two {
-            background-color: #00b894;
-            color: white;
-
-        }
-
-         .btn_two :hover {
-            background-color: #00b894;
-            color: white;
+        .hover_effect_two:hover {   
+            background-color: rgba(0, 0, 0, 0.2);
         }
 
         .change_content:after {
@@ -135,6 +129,11 @@
             animation: beat .25s infinite alternate;
             transform-origin: center;
         }
+
+        /* .welcome{
+            animation: rotate .25s infinite alternate;
+            transform-origin: center;
+        } */
 
         @keyframes changetext {
             0% {
@@ -164,9 +163,15 @@
 
         @keyframes beat {
             to {
-                transform: scale(1.4);
+                transform: scale(1.2);
             }
         }
+
+        /* @keyframes rotate{
+            to {
+                transform: scale(1.1);
+            }
+        } */
     </style>
 
 <body>
@@ -184,11 +189,11 @@
         </nav>
         <main>
             <section>
-                <h3>Welcome to India</h3>
+                <h3 class="welcome">Welcome to India</h3>
                 <h1>Do come and Visit <span class="change_content"></span></h1>
                 <p>"India once is not enough"</p>
-                <a href="#" class="btn_one">Learn More</a>
-                <a href="#" class="btn_two">SigUp Here</a>
+                <a href="#" class="hover_effect_one">Learn More</a>
+                <a href="#" class="hover_effect_two">SigUp Here</a>
             </section>
         </main>
     </header>
