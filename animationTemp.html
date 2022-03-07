@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animated.css/4.1.0/animated.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=League+Spartan:wght@400;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=League+Spartan:wght@900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=League+Spartan:wght@100;400;900&display=swap"
+        rel="stylesheet">
     <title>Animation</title>
     <style>
         * {
@@ -24,7 +34,7 @@
             background-size: cover;
         }
 
-        nav{
+        nav {
             background-color: rgba(0, 0, 0, 0.2);
             width: 100%;
             height: 15vh;
@@ -35,27 +45,28 @@
             text-transform: uppercase;
         }
 
-        nav .logo{
+        nav .logo {
             width: 25%;
             text-align: center;
         }
 
-        nav .menu{
+        nav .menu {
             width: 40%;
             display: flex;
             justify-content: space-around;
         }
 
-        nav .menu a{
+        nav .menu a {
             width: 25%;
             text-decoration: none;
             color: white;
             font-weight: bold;
         }
 
-        nav .menu a:first-child{
-            color: #00b894;    
+        nav .menu a:first-child {
+            color: #00b894;
         }
+
         main {
             width: 100%;
             height: 85vh;
@@ -115,7 +126,7 @@
             color: white;
         }
 
-        .hover_effect_two:hover {   
+        .hover_effect_two:hover {
             background-color: rgba(0, 0, 0, 0.2);
         }
 
@@ -129,6 +140,289 @@
             animation: beat .25s infinite alternate;
             transform-origin: center;
         }
+
+        .grid_div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-image: url(ballimg.png);
+            background-color: rgb(248, 248, 248);
+            border: 2px solid rgb(248, 248, 248);
+            position: relative;
+            height: 600px;
+            top: 15%;
+        }
+
+        .h1_div {
+            position: relative;
+            top: 20%;
+            left: 15%;
+        }
+
+        .h1_div h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+            font-family: 'League Spartan', sans-serif;
+            word-spacing: 6px;
+        }
+
+        .para_div {
+            position: relative;
+            top: 25%;
+            left: 15%;
+        }
+
+        .para_div p {
+            font-family: 'League Spartan', sans-serif;
+            font-size: 25px;
+        }
+
+        .parasec_div {
+            position: relative;
+            top: 30%;
+            left: 15%;
+        }
+
+        .parasec_div p {
+            font-family: 'League Spartan', sans-serif;
+            font-size: 25px;
+        }
+
+        .input_btn_div {
+            position: relative;
+            top: 31%;
+            left: 15%;
+            display: flex;
+        }
+
+        .input_btn_div input {
+            background-color: white;
+            width: 40%;
+            height: 40px;
+            font-size: 15px;
+            border: none;
+            font-family: 'League Spartan', sans-serif;
+            font-size: 20px;
+
+        }
+
+        .input_btn_div button {
+            width: 20%;
+            height: 40px;
+            border: none;
+            margin-left: 0px;
+            font-size: 20px;
+            font-family: 'League Spartan', sans-serif;
+            background-color: rgb(0, 147, 229);
+            border-radius: 5px;
+        }
+
+        .img_div {
+            top: 10%;
+            position: relative;
+
+        }
+
+        .img_div img {
+            width: 80%;
+            height: 70%;
+        }
+
+        .img_div img {
+
+            transform-origin: center;
+            animation: bounce 10s ease infinite;
+        }
+
+        .working_div_main {
+            height: 400px;
+            background-color: rgb(248, 248, 248);
+            border: 2px solid rgb(248, 248, 248);
+        }
+
+        .working_div h1 {
+            text-align: center;
+            color: rgb(0, 147, 229);
+            font-size: 80px;
+            font-family: 'League Spartan', sans-serif;
+        }
+
+        .star-img_div {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(0, 147, 229);
+            border-radius: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 60%;
+            left: 5%;
+        }
+
+
+
+        .wallet_img_div {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(0, 147, 229);
+            border-radius: 100%;
+            text-align: center;
+            position: absolute;
+            left: 39%;
+            bottom: 60%;
+        }
+
+        .handshake-img_div {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(0, 147, 229);
+            border-radius: 100%;
+            text-align: center;
+            position: absolute;
+            left: 72%;
+            bottom: 60%;
+
+        }
+
+        .star-img_div img {
+            height: 80%;
+            width: 80%;
+        }
+
+        .star-img_div img:hover {
+            animation: bounces 2s ease infinite;
+
+        }
+
+        .wallet_img_div img {
+            height: 80%;
+            width: 80%;
+        }
+
+        .wallet_img_div img:hover {
+            animation: shake 2s ease infinite;
+        }
+
+        .handshake-img_div img {
+            height: 80%;
+            width: 80%;
+        }
+
+        .handshake-img_div img:hover {
+            animation: bouncess 2s ease infinite;
+        }
+
+        .acc_div {
+            width: 300px;
+            height: 150px;
+            border: 3px solid white;
+            background-color: white;
+        }
+
+        .acc_div p {
+            position: absolute;
+            top: 50%;
+            padding-left: 16px;
+            font-size: 22px;
+            font-weight: bold;
+
+        }
+
+        .handshake_div p {
+            position: absolute;
+            top: 50%;
+            padding-left: 16px;
+            font-size: 22px;
+            font-weight: bold;
+
+
+        }
+
+        .wallet_div p {
+            position: absolute;
+            top: 50%;
+            padding-left: 16px;
+            font-size: 22px;
+            font-weight: bold;
+
+        }
+
+        .wallet_div {
+            width: 300px;
+            height: 150px;
+            border: 3px solid white;
+            background-color: white;
+
+        }
+
+        .handshake_div {
+            width: 300px;
+            height: 150px;
+            border: 3px solid white;
+            background-color: white;
+
+        }
+
+        .working_grid_div {
+            display: grid;
+            position: relative;
+            grid-template-columns: 1fr 1fr 1fr;
+            top: 40%;
+            left: 13%;
+            width: 80%;
+        }
+
+        .future_plan_h1_div {
+            position: relative;
+            left: 20%;
+        }
+
+        .future_plan_h1_div h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+            font-family: 'League Spartan', sans-serif;
+            word-spacing: 6px; 
+        }
+
+        .debitcard_h1_div {
+            position: relative;
+            left: 10%;
+        }
+
+        .debitcard_h1_div h1{
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+            font-family: 'League Spartan', sans-serif;
+            word-spacing: 6px;
+        }
+        .debitcard_grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+            left: 10%;
+            
+        }
+        .debitcard_grid img{
+            height: 70%;
+            width: 60%;
+            transform: rotate(-40deg);
+        }
+        .debitcard_grid_para{
+            position: relative;
+            top: 50%;
+            right: 20%;
+        }
+        .debitcard_grid_para p{
+            font-family: 'League Spartan', sans-serif;
+            font-size: 25px; 
+        }
+        .debitcard_grid img img:hover{
+            transform: rotate(20deg);
+            animation: wiggle 2s ease infinite;
+        }
+
+
 
         /* .welcome{
             animation: rotate .25s infinite alternate;
@@ -167,11 +461,81 @@
             }
         }
 
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0%);
+            }
+
+            20% {
+                transform: translateY(-15%);
+            }
+
+            /* 30% {
+                    transform: translateY(0%);
+                } */
+
+            30% {
+                transform: translateY(-20%);
+            }
+
+            /* 80% {
+                    transform: translateY(0%);
+                }
+                100% {
+                    transform: translateY(0);
+                } */
+        }
+
+        @keyframes bounces {
+
+            0% {
+                transform: translateY(0%);
+            }
+
+            20% {
+                transform: translateY(-15%);
+            }
+
+        }
+
+        @keyframes shake {
+
+            0% {
+                transform: translateX(0);
+            }
+
+
+            50% {
+                transform: translateX(-20px);
+            }
+
+
+            80% {
+                transform: translateX(20px);
+            }
+        }
+
+
+        @keyframes bouncess {
+
+            0% {
+                transform: translateY(0%);
+            }
+
+            20% {
+                transform: translateY(-10%);
+            }
+        }
+
         /* @keyframes rotate{
             to {
                 transform: scale(1.1);
             }
         } */
+        @keyframes wiggle{
+            
+        }
     </style>
 
 <body>
@@ -197,6 +561,96 @@
             </section>
         </main>
     </header>
+    <div class="grid_div">
+
+        <div class="left_div">
+            <div class="h1_div">
+                <h1>IT’S TIME TO</h1>
+                <h1>PRESERVE YOUR</h1>
+                <h1>CAPITAL AND MAKE A</h1>
+                <h1>FORTUNE WITH</h1>
+                <h1>CRYPTO CURRENCY.</h1>
+            </div>
+            <div class="para_div">
+                <p>Send and receive crypto instantly <br>with no Extra charges.<br>
+                    Stake your Bitorio token and earn up<br> to 60% yearly.</p>
+            </div>
+
+
+            <div class="parasec_div">
+                <p>Join the waitlist</p>
+            </div>
+            <div class="input_btn_div">
+                <input type="text" placeholder="Enter Your Email">
+                <button>Suscribe</button>
+            </div>
+        </div>
+
+        <div class="right_div">
+
+            <div class="img_div">
+                <img src="globeimg.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="working_div_main">
+        <div class="working_div">
+            <h1>How It works</h1>
+        </div>
+
+        <div class="working_grid_div">
+
+            <div class="star-img_div">
+                <img src="starimg.png">
+            </div>
+
+            <div class="acc_div">
+                <p>Sign up with us and open<br> your account</p>
+            </div>
+
+
+            <div class="wallet_img_div">
+                <img src="walletimg.png">
+            </div>
+
+            <div class="wallet_div">
+                <p>Deposit or buy Crypto to<br> your Bitorio wallet</p>
+            </div>
+
+            <div class="handshake-img_div">
+                <img src="handshakeimg.png">
+            </div>
+
+            <div class="handshake_div">
+                <p>Send and receive crypto <br>instantly for free</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="debit_card_main_div">
+
+        <div class="future_plan_h1_div">
+            <h1>BITORIO FUTURE PLANS</h1>
+        </div>
+
+        <div class="debitcard_h1_div">
+            <h1>Bitorio DEBIT CARD</h1>
+        </div>
+
+        <div class="debitcard_grid">
+            <img src="blue_credit_card.png">
+
+
+            <div class="debitcard_grid_para">
+                <p>We will launch our very own debit card to ease all <br> your transactions.</p>
+            </div>
+        </div>
+
+       
+
+    </div>
+
 </body>
 
 </html>
