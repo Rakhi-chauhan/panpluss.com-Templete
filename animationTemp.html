@@ -351,7 +351,6 @@
             height: 150px;
             border: 3px solid white;
             background-color: white;
-
         }
 
         .handshake_div {
@@ -373,56 +372,146 @@
 
         .future_plan_h1_div {
             position: relative;
-            left: 20%;
+            left: 40%;
+            top: 15%;
         }
 
         .future_plan_h1_div h1 {
-            font-size: 40px;
-            font-weight: bold;
-            color: black;
-            font-family: 'League Spartan', sans-serif;
-            word-spacing: 6px; 
-        }
-
-        .debitcard_h1_div {
-            position: relative;
-            left: 10%;
-        }
-
-        .debitcard_h1_div h1{
-            font-size: 40px;
+            font-size: 50px;
             font-weight: bold;
             color: black;
             font-family: 'League Spartan', sans-serif;
             word-spacing: 6px;
         }
-        .debitcard_grid{
+
+        .debit_card_main_div {
+            height: 500px;
+        }
+
+        .debitcard_h1_div {
+            position: relative;
+            left: 30%;
+            top: 30%;
+        }
+
+        .debitcard_h1_div h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: black;
+            font-family: 'League Spartan', sans-serif;
+            word-spacing: 6px;
+        }
+
+        .debitcard_grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             position: relative;
             left: 10%;
-            
+            top: 40%;
+            background-image: url(swap_engine_img.png);
+            background-repeat: no-repeat;
         }
-        .debitcard_grid img{
-            height: 70%;
-            width: 60%;
-            transform: rotate(-40deg);
-        }
-        .debitcard_grid_para{
+
+        .debitcard_grid img {
             position: relative;
-            top: 50%;
+            right: 20%;
+            bottom: 15%;
+        }
+
+        .debitcard_grid img:hover {
+            animation: wiggle 2s ease infinite;
+        }
+
+        .debitcard_grid_para {
+            position: relative;
+            top: 20%;
             right: 20%;
         }
-        .debitcard_grid_para p{
+
+        .debitcard_grid_para p {
             font-family: 'League Spartan', sans-serif;
-            font-size: 25px; 
+            font-size: 25px;
         }
-        .debitcard_grid img img:hover{
+
+        .debitcard_grid img img:hover {
             transform: rotate(20deg);
             animation: wiggle 2s ease infinite;
         }
 
+        .passive_income_div {
+            text-align: center;
+        }
 
+        .passive_income_div h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: black;
+            font-family: 'League Spartan', sans-serif;
+            word-spacing: 6px;
+            position: relative;
+            left: 30%;
+
+        }
+
+        .passive_income_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .passive_income_grid_para p {
+            font-family: 'League Spartan', sans-serif;
+            font-size: 25px;
+            position: relative;
+            top: 50%;
+            left: 30%;
+        }
+
+        .passive_income_img_div {
+            background-image: url(swap_engine_img.png);
+            background-repeat: no-repeat;
+            position: relative;
+            top: 50%;
+            left: 20%;
+        }
+
+        .passive_income_img_div img {
+            position: relative;
+            bottom: 20%;
+            right: 20%;
+        }
+
+        .passive_income_img_div img:hover {
+            animation: wiggle 2s ease infinite;
+        }
+
+        .swap_engine_div_h1 h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: black;
+            font-family: 'League Spartan', sans-serif;
+            word-spacing: 6px;
+            position: relative;
+            left: 10%;
+            top: 20%;
+        }
+
+        .swap_engine_div_h1 {
+            position: relative;
+            
+        }
+        .swap_engine_div_debit_card_img{
+            position: relative;
+            left: 5%;
+        }
+        .swap_engine_div_red_hand_img{
+            position: relative;
+            right: 20%;
+        }
+        .swap_engine_div_blue_hand_img{
+            position: relative;
+            right: 20%;
+        }
 
         /* .welcome{
             animation: rotate .25s infinite alternate;
@@ -533,8 +622,14 @@
                 transform: scale(1.1);
             }
         } */
-        @keyframes wiggle{
-            
+        @keyframes wiggle {
+            0% {
+                transform: rotate(-10deg);
+            }
+
+            20% {
+                transform: rotate(-15deg);
+            }
         }
     </style>
 
@@ -635,7 +730,7 @@
         </div>
 
         <div class="debitcard_h1_div">
-            <h1>Bitorio DEBIT CARD</h1>
+            <h1>BITORIO DEBIT CARD</h1>
         </div>
 
         <div class="debitcard_grid">
@@ -645,11 +740,44 @@
             <div class="debitcard_grid_para">
                 <p>We will launch our very own debit card to ease all <br> your transactions.</p>
             </div>
+
+            <div class="passive_income_div">
+                <h1>EARN PASSIVE INCOME</h1>
+
+            </div>
         </div>
 
-       
+        <div class="passive_income_grid">
 
+            <div class="passive_income_grid_para">
+                <p>Instead of letting your Crypto Putrefy in your<br> wallet, make use of it to earn passive income. We
+                    <br>shall
+                    give you the best returns at low risk
+                </p>
+            </div>
+
+            <div class="passive_income_img_div">
+                <img src="passive_income_img.png">
+            </div>
+
+        </div>
+
+
+
+        <div class="swap_engine_div_h1">
+            <h1>SWAP ENGINE</h1>
+        </div>
+
+        <div class="swap_engine_div">
+            
+            <img src="swap_engine_img.png" class="swap_engine_div_debit_card_img">
+        
+            <img src="red_hand_img.png" class="swap_engine_div_red_hand_img">
+            <img src="blue_hand_img.png" class="swap_engine_div_blue_hand_img">
+        </div>
     </div>
+
+
 
 </body>
 
