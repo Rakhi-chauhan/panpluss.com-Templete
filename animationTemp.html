@@ -32,7 +32,6 @@
             background-image: url(taj_mahal.jfif);
             background-repeat: no-repeat;
             background-size: cover;
-
         }
 
         nav {
@@ -76,7 +75,7 @@
             align-items: center;
             text-align: center;
             color: white;
-            overflow-x: hidden;
+
         }
 
         section h1 {
@@ -185,7 +184,7 @@
             position: relative;
             top: 30%;
             left: 15%;
-            overflow-x: hidden;
+
         }
 
         .parasec_div p {
@@ -225,8 +224,6 @@
         .img_div {
             top: 10%;
             position: relative;
-
-
         }
 
         .img_div img {
@@ -243,7 +240,7 @@
             height: 400px;
             background-color: rgb(248, 248, 248);
             border: 2px solid rgb(248, 248, 248);
-            overflow-x: hidden;
+
         }
 
         .working_div h1 {
@@ -262,8 +259,6 @@
             position: absolute;
             bottom: 60%;
             left: 5%;
-
-
         }
 
         .wallet_img_div {
@@ -275,7 +270,6 @@
             position: absolute;
             left: 39%;
             bottom: 60%;
-            overflow-x: hidden;
 
         }
 
@@ -288,7 +282,7 @@
             position: absolute;
             left: 72%;
             bottom: 60%;
-            overflow-x: hidden;
+
         }
 
         .star-img_div img {
@@ -333,7 +327,6 @@
             padding-left: 16px;
             font-size: 22px;
             font-weight: bold;
-
         }
 
         .handshake_div p {
@@ -365,7 +358,6 @@
             height: 150px;
             border: 3px solid white;
             background-color: white;
-
         }
 
         .working_grid_div {
@@ -381,7 +373,6 @@
             position: relative;
             left: 40%;
             top: 15%;
-            overflow-x: hidden;
             width: 50%;
         }
 
@@ -391,8 +382,6 @@
             color: black;
             font-family: 'League Spartan', sans-serif;
             word-spacing: 6px;
-            overflow-x: hidden;
-
         }
 
         .debit_card_main_div {
@@ -404,7 +393,6 @@
             position: relative;
             left: 30%;
             top: 30%;
-            overflow-x: hidden;
             width: 50%;
         }
 
@@ -473,7 +461,6 @@
         .passive_income_grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-
         }
 
         .passive_income_grid_para p {
@@ -524,7 +511,6 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             width: 80%;
-            overflow-x: hidden;
             top: 20%;
         }
 
@@ -547,6 +533,7 @@
             position: absolute;
             left: 21%;
         }
+
 
         .swap_engine_div_blue_hand_img:hover {
             animation: shake 2s ease infinite;
@@ -660,6 +647,7 @@
             0% {
                 transform: translateY(0%);
             }
+
             20% {
                 transform: translateY(-10%);
             }
@@ -672,43 +660,71 @@
         } */
         @keyframes wiggle {
             0% {
+                transform: rotate(-5deg);
+            }
+
+            20% {
                 transform: rotate(-10deg);
             }
-            20% {
-                transform: rotate(-15deg);
+
+            30% {
+                transform: rotate(-15);
             }
+
+            60% {
+                transform: rotate(-20);
+            }
+
         }
+
         @media screen and (max-width: 768px) {
 
             nav .menu {
                 width: 60%;
                 justify-content: space-between;
             }
+
             .img_div {
                 left: 10%;
+                width: 90%;
+            }
 
-            }
-            .working_div_main {
-                overflow-y: hidden;
-            }
             .working_grid_div {
                 left: 5%;
             }
+
+           
+
             .wallet_img_div {
                 left: 45%;
             }
+
             .wallet_div p {
-                left: 45%;
+                left: 40%;
                 font-size: 18px;
             }
+
+            .wallet_div {
+                width: 240px;
+            }
+
             .handshake-img_div {
                 left: 85%;
             }
+
             .handshake_div p {
                 top: 50%;
                 position: relative;
-                right: 30%;
                 font-size: 18px;
+            }
+
+            .handshake_div {
+                width: 240px;
+            }
+
+            .acc_div {
+                width: 240px;
+                left: 5%;
             }
 
             .acc_div p {
@@ -728,11 +744,19 @@
                 left: 20%;
             }
 
+            .passive_income_img_div img {
+                bottom: 30%;
+                right: 30%;
+            }
+
+            .passive_income_img_div {
+                background-size: 100%;
+            }
+
             .swap_engine_para_div {
                 left: 65%;
                 bottom: 40%;
             }
-
 
             .swap_engine_para_div p {
                 font-size: 25px;
@@ -743,64 +767,101 @@
             nav {
                 height: 25vh;
             }
+
             nav .menu {
                 flex-direction: column;
                 gap: 5px;
                 width: 30%;
             }
+
             .h1_div h1 {
                 font-size: 30px;
             }
+
             .img_div {
                 top: 30%;
             }
+
             .working_div h1 {
                 font-size: 60px;
             }
+
             .working_div {
                 position: relative;
                 top: 20%;
             }
+
             .input_btn_div input {
                 width: 100%;
+                font-size: 10px;
+                padding-left: 10px;
             }
+
+            .input_btn_div button {
+                width: 100%;
+                font-size: 10px;
+            }
+
             .working_grid_div {
                 left: 2%;
             }
+
             .star-img_div {
                 width: 100px;
                 height: 100px;
                 bottom: 70%;
                 left: 8%;
             }
+
             .wallet_img_div {
                 width: 100px;
                 height: 100px;
                 left: 47%;
                 bottom: 70%;
             }
+
             .handshake-img_div {
                 width: 100px;
                 height: 100px;
                 left: 87%;
                 bottom: 70%;
             }
+
+            .acc_div {
+                width: 135px;
+            }
+
             .acc_div p {
                 top: 40%;
                 font-size: 10px;
+                left: 7%;
             }
+
+            .wallet_div {
+                width: 135px;
+            }
+
             .wallet_div p {
                 top: 40%;
                 font-size: 10px;
-            }
-            .handshake_div p {
-                font-size: 10px;
 
             }
+
+            .handshake_div {
+                width: 135px;
+            }
+
+            .handshake_div p {
+                font-size: 10px;
+                top: 40%;
+                right: 1%;
+            }
+
             .future_plan_h1_div {
                 left: 10%;
                 width: 100%;
             }
+
             .future_plan_h1_div h1 {
                 font-size: 30px;
             }
@@ -820,6 +881,7 @@
                 left: 0%;
                 top: 30%;
                 width: 100%;
+                background-size: 100%;
             }
 
             .debitcard_grid img {
@@ -829,38 +891,47 @@
                 height: 90%;
                 width: 100%;
             }
+
             .debitcard_grid_para {
                 position: relative;
-                top: 5%;
+                top: 0%;
                 left: 10%;
             }
+
             .debitcard_grid_para p {
                 font-size: 15px;
             }
+
             .passive_income_div {
                 text-align: left;
                 left: 5%;
             }
+
             .passive_income_div h1 {
                 font-size: 30px;
                 padding-top: 12px;
                 left: 5%;
             }
+
             .passive_income_grid {
                 grid-template-columns: 1fr;
                 position: relative;
                 top: 25%;
             }
+
             .passive_income_grid_para p {
                 font-size: 15px;
                 top: 100%;
-                left: 6%;
+                left: 10%;
             }
+
             .passive_income_img_div {
                 top: 10%;
                 left: 0%;
                 width: 100%;
+                background-size: 100%;
             }
+
             .passive_income_img_div img {
                 position: relative;
                 bottom: 5%;
@@ -911,11 +982,74 @@
             .swap_engine_para_div p {
                 top: 20%;
                 font-size: 15px;
-
             }
         }
 
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 375px) {
+
+            section h1 {
+                font-size: 40px;
+            }
+
+            .working_div h1 {
+                font-size: 40px;
+            }
+
+            .working_div {
+
+                top: 32%;
+            }
+
+            .acc_div {
+                width: 120px;
+            }
+
+            .acc_div p {
+                left: 1%;
+            }
+
+            .wallet_div {
+                width: 120px;
+            }
+
+            .wallet_div p {
+                left: 40%;
+            }
+
+            .handshake_div {
+                width: 130px;
+            }
+
+            .star-img_div {
+                width: 70px;
+                height: 70px;
+                bottom: 80%;
+            }
+
+            .wallet_img_div {
+                width: 70px;
+                height: 70px;
+                bottom: 80%;
+            }
+
+            .handshake-img_div {
+                width: 80px;
+                height: 80px;
+                bottom: 80%;
+            }
+
+            .future_plan_h1_div {
+                left: 5%;
+            }
+
+            .passive_income_div h1 {
+                left: 5%;
+                font-size: 25px;
+            }
+
+            .debitcard_h1_div {
+                left: 16%;
+            }
 
         }
     </style>
@@ -1048,23 +1182,22 @@
             </div>
 
         </div>
-
-
-
         <div class="swap_engine_div_h1">
             <h1>SWAP ENGINE</h1>
         </div>
 
         <div class="swap_engine_div">
 
-            <img src="swap_engine_img.png" class="swap_engine_div_debit_card_img">
 
-            <img src="red_hand_img.png" class="swap_engine_div_red_hand_img">
-            <img src="blue_hand_img.png" class="swap_engine_div_blue_hand_img">
-
+            <div class="debitcard_red_blue_hand_main_div">
+                <img src="swap_engine_img.png" class="swap_engine_div_debit_card_img">
+                <img src="red_hand_img.png" class="swap_engine_div_red_hand_img">
+                <img src="blue_hand_img.png" class="swap_engine_div_blue_hand_img">
+            </div>
 
             <div class="swap_engine_para_div">
-                <p>With this easy swap engine our users can choose <br>what currency they would like to receive the <br>
+                <p>With this easy swap engine our users can choose <br>what currency they would like to receive
+                    the <br>
                     payments. Eg:- Bitcoin, USDT.</p>
             </div>
         </div>
