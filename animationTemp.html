@@ -149,13 +149,13 @@
             border: 2px solid rgb(248, 248, 248);
             position: relative;
             height: 600px;
-            top: 15%;
         }
 
         .h1_div {
-            position: relative;
+            position: absolute;
             top: 20%;
             left: 15%;
+
         }
 
         .h1_div h1 {
@@ -167,8 +167,8 @@
         }
 
         .para_div {
-            position: relative;
-            top: 25%;
+            position: absolute;
+            top: 55%;
             left: 15%;
         }
 
@@ -178,9 +178,10 @@
         }
 
         .parasec_div {
-            position: relative;
+            position: absolute;
             top: 30%;
             left: 15%;
+            top: 73%;
 
         }
 
@@ -190,15 +191,15 @@
         }
 
         .input_btn_div {
-            position: relative;
-            top: 31%;
+            position: absolute;
+            top: 80%;
             left: 15%;
             display: flex;
         }
 
         .input_btn_div input {
             background-color: white;
-            width: 40%;
+            width: 30%;
             height: 40px;
             font-size: 15px;
             border: none;
@@ -207,7 +208,7 @@
         }
 
         .input_btn_div button {
-            width: 20%;
+            width: 30%;
             height: 40px;
             border: none;
             margin-left: 0px;
@@ -219,7 +220,7 @@
 
         .img_div {
             top: 10%;
-            position: relative;
+            position: absolute;
         }
 
         .img_div img {
@@ -232,10 +233,22 @@
             animation: bounce 10s ease infinite;
         }
 
+
         .working_div_main {
             height: 400px;
             background-color: rgb(248, 248, 248);
             border: 2px solid rgb(248, 248, 248);
+            position: relative;
+            /* overflow-x: hidden; */
+        }
+
+        .working_grid_div {
+            display: grid;
+            position: absolute;
+            grid-template-columns: 1fr 1fr 1fr;
+            top: 40%;
+            left: 13%;
+            width: 80%;
         }
 
         .working_div h1 {
@@ -323,7 +336,7 @@
         }
 
         .handshake_div p {
-            position: relative;
+            position: absolute;
             top: 50%;
             padding-left: 16px;
             font-size: 22px;
@@ -352,17 +365,14 @@
             background-color: white;
         }
 
-        .working_grid_div {
-            display: grid;
+        .debit_card_main_div {
+            height: 900px;
             position: relative;
-            grid-template-columns: 1fr 1fr 1fr;
-            top: 40%;
-            left: 13%;
-            width: 80%;
+
         }
 
         .future_plan_h1_div {
-            position: relative;
+            position: absolute;
             left: 40%;
             top: 15%;
             width: 50%;
@@ -376,14 +386,10 @@
             word-spacing: 6px;
         }
 
-        .debit_card_main_div {
-            height: 500px;
-        }
-
         .debitcard_h1_div {
-            position: relative;
+            position: absolute;
             left: 30%;
-            top: 30%;
+            top: 35%;
             width: 50%;
         }
 
@@ -398,28 +404,17 @@
         .debitcard_grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            position: relative;
-            left: 10%;
-            top: 40%;
+            position: absolute;
             background-image: url(swap_engine_img.png);
             background-repeat: no-repeat;
-            width: 80%;
-        }
-
-        .debitcard_grid img {
-            position: relative;
-            right: 20%;
-            bottom: 15%;
-        }
-
-        .debitcard_grid img:hover {
-            animation: wiggle 2s ease infinite;
+            top: 50%;
+            left: 10%;
         }
 
         .debitcard_grid_para {
-            position: relative;
-            top: 20%;
-
+            position: absolute;
+            top: 30%;
+            left: 60%;
         }
 
         .debitcard_grid_para p {
@@ -427,58 +422,56 @@
             font-size: 25px;
         }
 
-        .debitcard_grid img img:hover {
-            transform: rotate(20deg);
-            animation: wiggle 2s ease infinite;
+        .passive_income_main_div {
+            position: relative;
+            height: 700px;
+
         }
 
         .passive_income_div {
-            text-align: center;
-            position: relative;
-            left: 60%;
-            
+            position: absolute;
+            top: 20%;
+            left: 50%;
         }
 
-        .passive_income_div h1 {
-            font-size: 50px;
-            font-weight: bold;
-            color: black;
+        .passive_income_div p {
             font-family: 'League Spartan', sans-serif;
-            word-spacing: 6px;
-            position: relative;
-            left: 30%;
+            font-size: 25px;
         }
 
         .passive_income_grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
+
+        }
+
+        .passive_income_grid_para {
+            position: absolute;
+            top: 50%;
+            left: 10%;
         }
 
         .passive_income_grid_para p {
             font-family: 'League Spartan', sans-serif;
             font-size: 25px;
-            position: relative;
-            top: 50%;
-            left: 30%;
         }
 
         .passive_income_img_div {
+            position: absolute;
             background-image: url(swap_engine_img.png);
             background-repeat: no-repeat;
-            position: relative;
-            top: 50%;
-            left: 20%;
-            width: 70%;
+            top: 30%;
+            left: 50%;
         }
 
-        .passive_income_img_div img {
+        .swap_engine_div_main {
+            height: 500px;
             position: relative;
-            bottom: 20%;
-            right: 20%;
         }
 
-        .passive_income_img_div img:hover {
-            animation: wiggle 2s ease infinite;
+        .swap_engine_div_h1 {
+            position: absolute;
+            left: 10%;
         }
 
         .swap_engine_div_h1 h1 {
@@ -486,59 +479,41 @@
             font-weight: bold;
             color: black;
             font-family: 'League Spartan', sans-serif;
-            word-spacing: 6px;
-            position: relative;
-            left: 20%;
         }
 
-        .swap_engine_div {
-            width: 100%;
-            position: relative;
-            top: 30%;
-        }
-
-        .swap_engine_div_h1 {
-            position: relative;
+        .swap_engine_grid_div {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            width: 80%;
-            top: 20%;
+
         }
 
-        .swap_engine_div_debit_card_img {
-            position: relative;
-            left: 5%;
+        .swap_engine_div_left_div {
+            position: absolute;
+            top: 10%;
         }
 
         .swap_engine_div_red_hand_img {
             position: absolute;
-            left: 10%;
-            padding-top: 3rem;
-        }
-
-        .swap_engine_div_red_hand_img:hover {
-            animation: shake 2s ease infinite;
+            right: 45%;
+            top: 15%;
         }
 
         .swap_engine_div_blue_hand_img {
             position: absolute;
-            left: 21%;
+            right: 15%;
+            top: 8%;
         }
 
-        .swap_engine_div_blue_hand_img:hover {
-            animation: shake 2s ease infinite;
-        }
-
-        .swap_engine_para_div {
+        .swap_engine_para_right_div{
             position: absolute;
-            left: 50%;
-            bottom: 40%;
+            left: 40%;
+            top: 20%;
         }
-
-        .swap_engine_para_div p {
+        .swap_engine_para_right_div p{
             font-family: 'League Spartan', sans-serif;
             font-size: 25px;
         }
+
 
         /* .welcome{
             animation: rotate .25s infinite alternate;
@@ -621,11 +596,9 @@
                 transform: translateX(0);
             }
 
-
             50% {
                 transform: translateX(-20px);
             }
-
 
             80% {
                 transform: translateX(20px);
@@ -673,66 +646,91 @@
                 width: 60%;
                 justify-content: space-between;
             }
+
             section h1 {
-            font-size: 35px;
+                font-size: 35px;
             }
 
             .h1_div h1 {
                 font-size: 25px;
             }
+
             .para_div p {
-        
-            font-size: 15px;
-        }
+                font-size: 15px;
+            }
 
             .img_div {
                 left: 1%;
                 width: 80%;
             }
+
             .parasec_div p {
-           
-            font-size: 15px;
-        }
-
-            .working_div h1 {
-                font-size: 60px;
-            }
-
-            .working_grid_div {
-                left: 5%;
-            }
-            .wallet_img_div {
-               left: 45%;
-            }
-            .wallet_div p {
-                left: 42%;
                 font-size: 15px;
             }
 
-            .wallet_div {
-                width: 240px;
+            .working_div_main {
+                position: relative;
             }
+
+            .working_div h1 {
+                font-size: 50px;
+            }
+
+            .working_grid_div {
+                left: 10%;
+                position: absolute;
+            }
+
+            .star-img_div {
+                width: 100px;
+                height: 100px;
+                bottom: 70%;
+                left: 4%;
+            }
+
+            .wallet_img_div {
+                width: 100px;
+                height: 100px;
+                bottom: 70%;
+                left: 38%;
+            }
+
+            .wallet_div p {
+                left: 35%;
+                font-size: 10px;
+            }
+
+            .wallet_div {
+                width: 150px;
+                height: 120px;
+            }
+
             .handshake-img_div {
-                left: 85%;
+                width: 100px;
+                height: 100px;
+                bottom: 70%;
             }
 
             .handshake_div p {
                 top: 50%;
                 position: relative;
-                font-size: 15px;
+                font-size: 10px;
             }
 
             .handshake_div {
-                width: 240px;
+                width: 150px;
+                height: 120px;
+
             }
 
             .acc_div {
-                width: 240px;
+                width: 150px;
                 left: 5%;
+                height: 120px;
             }
 
             .acc_div p {
-                font-size: 15px;
+                font-size: 10px;
             }
 
             .future_plan_h1_div {
@@ -741,7 +739,7 @@
             }
 
             .future_plan_h1_div h1 {
-            font-size: 30px;
+                font-size: 30px;
             }
 
             .debitcard_grid {
@@ -758,29 +756,30 @@
             .debitcard_grid_para {
                 left: 20%;
             }
+
             .debitcard_grid_para p {
-            
-            font-size: 15px;
-        }
+
+                font-size: 15px;
+            }
 
             .debitcard_h1_div {
                 width: 65%;
             }
+
             .debitcard_h1_div h1 {
-            font-size: 30px;
+                font-size: 30px;
             }
 
             .passive_income_div h1 {
-            font-size: 30px;
+                font-size: 30px;
             }
 
             .passive_income_div {
                 left: 20%;
-                
             }
+
             .passive_income_grid_para p {
-           
-            font-size: 15px;
+                font-size: 15px;
             }
 
             .passive_income_img_div img {
@@ -800,8 +799,9 @@
             .swap_engine_div_h1 {
                 width: 60%;
             }
+
             .swap_engine_div_h1 h1 {
-            font-size: 30px;
+                font-size: 30px;
             }
 
             .swap_engine_div_blue_hand_img {
@@ -1054,7 +1054,7 @@
 
             .working_div {
 
-                top: 32%;
+                top: 10%;
             }
 
             .acc_div {
@@ -1100,7 +1100,7 @@
             }
 
             .future_plan_h1_div h1 {
-            font-size: 20px;
+                font-size: 20px;
             }
 
             .passive_income_div h1 {
@@ -1111,12 +1111,13 @@
             .debitcard_h1_div {
                 left: 16%;
             }
+
             .debitcard_h1_div h1 {
-            font-size: 20px;
+                font-size: 20px;
             }
 
             .swap_engine_div_h1 h1 {
-            font-size: 20px;
+                font-size: 20px;
             }
         }
     </style>
@@ -1144,6 +1145,10 @@
             </section>
         </main>
     </header>
+
+
+
+
     <div class="grid_div">
 
         <div class="left_div">
@@ -1154,20 +1159,26 @@
                 <h1>FORTUNE WITH</h1>
                 <h1>CRYPTO CURRENCY.</h1>
             </div>
+
             <div class="para_div">
                 <p>Send and receive crypto instantly <br>with no Extra charges.<br>
                     Stake your Bitorio token and earn up<br> to 60% yearly.</p>
             </div>
 
 
+
             <div class="parasec_div">
                 <p>Join the waitlist</p>
             </div>
+
             <div class="input_btn_div">
                 <input type="text" placeholder="Enter Your Email">
                 <button>Suscribe</button>
             </div>
+
         </div>
+
+
 
         <div class="right_div">
 
@@ -1177,10 +1188,16 @@
         </div>
     </div>
 
+
+
+
+
     <div class="working_div_main">
         <div class="working_div">
             <h1>How It works</h1>
         </div>
+
+
 
         <div class="working_grid_div">
 
@@ -1211,6 +1228,8 @@
         </div>
     </div>
 
+
+
     <div class="debit_card_main_div">
 
         <div class="future_plan_h1_div">
@@ -1229,10 +1248,15 @@
                 <p>We will launch our very own debit card to ease all <br> your transactions.</p>
             </div>
 
-            <div class="passive_income_div">
-                <h1>EARN PASSIVE INCOME</h1>
 
-            </div>
+
+        </div>
+    </div>
+
+    <div class="passive_income_main_div">
+
+        <div class="passive_income_div">
+            <h1>EARN PASSIVE INCOME</h1>
         </div>
 
         <div class="passive_income_grid">
@@ -1244,31 +1268,47 @@
                 </p>
             </div>
 
+
             <div class="passive_income_img_div">
                 <img src="passive_income_img.png">
             </div>
 
         </div>
+    </div>
+
+
+
+    <div class="swap_engine_div_main">
+
         <div class="swap_engine_div_h1">
             <h1>SWAP ENGINE</h1>
         </div>
 
-        <div class="swap_engine_div">
 
 
+        <div class="swap_engine_grid_div">
 
-            <img src="swap_engine_img.png" class="swap_engine_div_debit_card_img">
-            <img src="red_hand_img.png" class="swap_engine_div_red_hand_img">
-            <img src="blue_hand_img.png" class="swap_engine_div_blue_hand_img">
+            <div class="swap_engine_div_left_div">
+
+                <img src="swap_engine_img.png" class="swap_engine_div_debit_card_img">
+                <img src="red_hand_img.png" class="swap_engine_div_red_hand_img">
+                <img src="blue_hand_img.png" class="swap_engine_div_blue_hand_img">
+
+            </div>
 
 
-            <div class="swap_engine_para_div">
+            <div class="swap_engine_para_right_div">
                 <p>With this easy swap engine our users can choose <br>what currency they would like to receive
                     the <br>
                     payments. Eg:- Bitcoin, USDT.</p>
             </div>
+
+
         </div>
     </div>
+    
+
+
 
 
 
