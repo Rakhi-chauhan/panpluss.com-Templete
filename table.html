@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            letter-spacing: 0.5px;
+        }
+        body{
+            background-color: #f5826e;
+        }
+        .invoice-table{
+            border-collapse: collapse;
+            margin: 25px auto;
+            background-color: #fff;
+            box-shadow: 0px 10px 30px 15px rgb(0,0,0,.15);
+            border-radius: 5px;
+            width: 25em;
+        }
+        .invoice-table thead tr{
+            border-bottom: 1px dashed gray;
+        }
+        .invoice-table tfoot tr{
+            border-bottom: 1px dashed gray;
+        }
+        .invoice-table thead tr td{
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: gray;
+            padding: 8px;
+        }
+        .invoice-table tfoot tr td{
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: green;
+            padding: 8px;
+        }
+        .invoice-table tbody tr td{
+            padding: 8px;
+        }
+        .invoice-table thead tr td:nth-last-child(1),
+        .invoice-table tbody tr td:nth-last-child(1),
+        .invoice-table tfoot tr td:nth-last-child(1)
+        {
+            text-align: right;
+        }
+        .invoice-table tbody span{
+            font-size: 12px;
+            color: grey;
+        }  
+    </style>
+</head>
+
+<body>
+    <!-- <table style="width: 100%;">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Alfreds Futterkiste</td>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Alfreds Futterkiste</td>
+
+        </tr>
+    </table>
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <th>First Name</th>
+                <td>Rakhi</td>
+                <td>Madhu</td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td>Chauhan</td>
+                <td>Chauhan</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>22</td>
+                <td>23</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Rakhi</td>
+                <td>chauhan</td>
+                <td>Riya</td>
+
+            </tr>
+            <tr>
+                <td>Rakhi</td>
+                <td>chauhan</td>
+                <td>Riya</td>
+
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>25</td>
+
+            </tr>
+        </table>
+    </div> -->
+
+    
+    <!-- <table border="2" width="500" cellspacing="20">
+
+
+        <thead>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table> -->
+
+    <table border="3" class="invoice-table" width="500">
+        <thead>
+            <tr>
+                <td>Product</td>
+                <td>Qty</td>
+                <td>Price</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+            <td>Drink<span>(Large)</span></td>
+            <td>1</td>
+            <td>2.90</td>
+            </tr>
+            <tr>
+                <td>Fries<span>(Small)</span></td>
+                <td>2</td>
+                <td>5.00</td>
+            </tr>
+            <tr>
+                <td>Burger<span>(no Pickle)</span></td>
+                <td>2</td>
+                <td>7.00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2" align="right">Total</td>
+                <td>14.00</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

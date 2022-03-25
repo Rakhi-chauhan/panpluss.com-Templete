@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // if Condition
+
+        // const hour = new Date().getHours;
+        // let greet;
+        // if(hour <18){
+        //     greet = "Good Day";
+        // }else {
+        //     greet = "Not a Good Day"
+        // }
+        // document.write(greet);
+
+        // function testnum(b){
+        // let result;
+        // if(b>0){
+        //     result = "positive";
+        // }else{
+        //     result = "Not positive";
+        // }
+        // return result;
+        // }
+        // document.write(testnum(-3))
+
+        let day;
+        switch (new Date().getDay()) {
+            case 1:
+                day = "Sunday";
+            case 2:
+                day = "Monday";
+            case 3:
+                day = "Tuesday";
+            case 4:
+                day = "Wednesday";
+            case 5:
+                day = "Thuresday";
+            case 6:
+                day = "Friday";
+            case 7:
+                day = "Saturday";
+        }
+        document.write("today is"  + " " + day);
+
+
+    </script>
+</body>
+
+</html>
