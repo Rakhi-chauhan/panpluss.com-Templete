@@ -1,0 +1,619 @@
+/*FROM HERE Navigation Bar*/
+/* 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 */
+* {
+    font-family: Verdana, Tahoma, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  body,
+  html {
+    overflow-x: hidden;
+    /* width: 100%; */
+  }
+  
+  body {
+    background-color: #282a35;
+  }
+  
+  .navbar {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  
+  #logo {
+    margin-left: 10px;
+    height: 70px;
+    width: 70px;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .navbar a {
+    text-align: center;
+    padding: 27px 15px;
+  }
+  
+  .LinkR a {
+    margin: 0px 3px;
+    text-align: center;
+    width: 140px;
+    padding: 10px 0px;
+    border: 0px solid red;
+    border-radius: 25px;
+  }
+  
+  .LinkR {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  
+  #web {
+    background-color: #f5bfc7;
+  }
+  
+  #login {
+    color: white;
+    background-color: #54ab6d;
+  }
+  
+  #new {
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 3px 10px;
+    background-color: white;
+  }
+  
+  .navbar a:hover,
+  .LinkR a:hover,
+  #web:hover {
+    background-color: #54ab6d;
+  }
+  
+  #login:hover {
+    background-color: #4b9961;
+  }
+  
+  /*FROM HERE HTML Section*/
+  
+  .box {
+    display: flex;
+    padding: 50px 0px;
+    background-color: #282a35;
+  }
+  
+  .sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0px 30px;
+    width: 50vw;
+  }
+  
+  .sec h1 {
+    font-size: 80px;
+  }
+  
+  #sent {
+    margin: 20px;
+  }
+  
+  #btn1 {
+    width: 220px;
+    background-color: #54ab6d;
+    padding: 15px 0px;
+    border-radius: 25px;
+    margin: 10px 0px;
+  }
+  
+  #btn2 {
+    position: relative;
+    color: black;
+    width: 220px;
+    background-color: #fff07f;
+    padding: 15px 0px;
+    border-radius: 25px;
+    margin: 10px 0px;
+  }
+  
+  #btn2 span {
+    font-size: 14px;
+    position: absolute;
+    padding: 5px 15px;
+    top: -5px;
+    left: -20px;
+    background-color: #f5bfc7;
+    border-radius: 25px;
+    transform: rotate(-20deg);
+  }
+  
+  #btn3 {
+    color: black;
+    width: 220px;
+    background-color: #e7e9eb;
+    padding: 15px 0px;
+    border-radius: 25px;
+    margin: 10px 0px;
+  }
+  
+  .sec .code {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    width: 100%;
+    padding: 30px 15px;
+    background-color: #e7e9eb;
+    border-radius: 4px;
+  }
+  
+  .code .codehtm {
+    margin: 10px 0px;
+    padding: 10px 10px;
+    background-color: #ffffff;
+    border-left: 4px solid green;
+  }
+  
+  .code .btn {
+    color: white;
+    text-align: center;
+    width: 240px;
+    padding: 15px 0px;
+    border-radius: 25px;
+    background-color: #4b9961;
+  }
+  
+  .css {
+    background-color: rgb(209, 220, 235);
+    color: black;
+  }
+  
+  .css .sec{
+    color: black;
+  }
+  
+  .js {
+    background-color: rgb(230, 230, 163);
+    color: black;
+  }
+  
+  .js .sec{
+    color: black;
+  }
+  
+  .code .space{
+    height: 250px;
+  }
+  
+  .grid1 {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #282a35;
+  }
+  
+  .grid1 .gridsec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    width: 46%;
+    height: 300px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .gridsec p {
+    padding: 20px;
+  }
+  
+  .gridsec .btn {
+    font-size: 18px;
+    margin-top: 40px;
+    color: white;
+    padding: 15px 0px;
+    width: 240px;
+    background-color: rgb(39, 50, 59);
+    border-radius: 25px;
+  }
+  
+  .grid2 {
+    background-color: #282a35;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .grid2 .gridsec {
+    font-size: 24px;
+    text-align: center;
+    width: 21%;
+    margin: 2% 2%;
+    padding: 50px;
+    border-radius: 5px;
+  }
+  
+  .grid3 {
+    background-color: #282a35;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .grid3 .gridsec {
+    font-size: 24px;
+    text-align: center;
+    width: 46%;
+    margin: 2% 2%;
+    padding: 50px;
+    border-radius: 5px;
+  }
+  
+  #c1 {
+    background-color: #f5bfc7;
+  }
+  
+  #c2 {
+    background-color: #e9df97;
+  }
+  
+  #c3 {
+    background-color: #f3ecea;
+  }
+  
+  #c4 {
+    background-color: #c6d9cf;
+  }
+  
+  #c5 {
+    background-color: #8ac2c3;
+  }
+  
+  .ceditor {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 150px;
+    background-color: #282a35;
+  }
+  
+  .ceditor h1 {
+    color: white;
+    font-size: 64px;
+    text-align: center;
+  }
+  
+  .ceditor p {
+    color: white;
+    text-align: center;
+    margin: 15px 0px;
+    font-weight: bold;
+  }
+  
+  .ceditor #f1 {
+    margin: 15px 0px;
+    color: white;
+    padding: 10px 15px;
+    background-color: #4b9961;
+    border-radius: 10px;
+    width: 320px;
+  }
+  .ceditor #f2 {
+    margin: 15px 0px;
+    padding: 10px 15px;
+    background-color: #fff07f;
+    border-radius: 10px;
+    width: 350px;
+  }
+  
+  .cgame {
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #96d4d4;
+  }
+  
+  .cgame span {
+    margin: 20px 0px;
+    font-size: 42px;
+  }
+  
+  .cgame #text {
+    font-size: 24px;
+  }
+  
+  .cgame img:hover {
+    opacity: 0.6;
+  }
+  
+  .cgame .btn {
+    color: white;
+    padding: 15px 70px;
+    margin: 25px 0px;
+    border-radius: 25px;
+    background-color: rgb(26, 34, 41);
+  }
+  
+  .EaQ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://www.w3schools.com/about/w3codes.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .EaQ #text1 {
+    color: white;
+    font-size: 36px;
+    padding: 15px 0px;
+  }
+  
+  .EaQ #text2 {
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+  }
+  
+  .EaQ #text3 {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #text3 #ex {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 80px;
+    margin: 0% 5%;
+    width: 50vw;
+    border-radius: 5px;
+    background-color: #52a66a;
+  }
+  
+  #text3 #qz {
+    font-size: 24px;
+    text-align: center;
+    padding: 80px;
+    margin: 0% 5%;
+    width: 50vw;
+    border-radius: 5px;
+    background-color: #f8ed9f;
+  }
+  
+  .WTemplate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e7e9eb;
+  }
+  
+  .WTemplate #text1 {
+    margin: 40px 0px;
+    font-size: 36px;
+  }
+  
+  .WTemplate #text2 {
+    padding-bottom: 25px;
+  }
+  
+  .WTemplate img {
+    width: 70%;
+  }
+  
+  .WTemplate .btn {
+    margin: 25px 0px;
+    margin-bottom: 100px;
+    background-color: #2e3036;
+    padding: 20px 200px;
+    border-radius: 25px;
+    color: white;
+  }
+  
+  .Kstart{
+    display: flex;
+    flex-direction: column;
+    background-color: #282a35;
+    padding: 50px 50px;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .Kstart .text1{
+    font-size: 60px;
+    color:rgb(230, 163, 200);
+    padding: 30px 0px;
+  }
+  
+  .Kstart .text2{
+    font-size: 48px;
+    color:rgb(230, 163, 200);
+    padding: 40px 0px;
+  }
+  
+  .Kstart .btn{
+    color: white;
+    padding: 20px 50px;
+    background-color: seagreen;
+    border-radius: 25px;
+  }
+  .Kstart #w3_cert_arrow{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: -50px;
+    right: 250px;
+    z-index: 2;
+  }
+  .Kstart #w3_cert_badge{
+    position: absolute;
+    transform: rotate(10deg);
+    height: 240px;
+    width: 240px;
+    bottom: -120px;
+    right: 50px;
+  }
+  
+  .carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+    background-color: white;
+  }
+  
+  .carousel .text1{
+    font-size: 44px;
+    padding: 15px;
+  }
+  
+  .carousel .snippet{
+    padding: 15px;
+  }
+  
+  .carousel .eg{
+    padding: 10px;
+  }
+  
+  .carousel .blank{
+    height:  80px;
+    width: 50px;
+    background-color: rgb(39, 50, 59);
+  }
+  .carousel .text2{
+    color: white;
+    padding: 20px 200px;
+    background-color: rgb(39, 50, 59);
+    border-radius: 20px;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #282a35;
+    align-items: center;
+  }
+  .footer .bar {
+    width: 100%;
+    display: flex;
+    margin: 20px;
+    margin-left: 5%;
+  }
+  
+  .footer .bar > a {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .rightT a,
+  .rightT span {
+    /* margin: 10px; */
+    padding: 10px;
+    color: white;
+  }
+  
+  .bar .rightT {
+    align-items: center;
+    margin-right: 5%;
+    display: flex;
+    margin-left: auto;
+  }
+  .SMLinks {
+    display: flex;
+    margin-left: auto;
+    margin-right: 2%;
+  }
+  .SMLinks a {
+    margin: 0px 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .footer .text {
+    font-size: 15px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  .footer #btn {
+    width: 40%;
+    background-color: #4b9961;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    margin: 5%;
+  }
+  
+  /* FROM HERE starts Responsive coding */
+  @media screen and (max-width: 1000px) {
+    .navbar #ht1 {
+      display: none;
+    }
+  
+    .LinkR #ht2 {
+      display: none;
+    }
+  
+    .box {
+      flex-direction: column;
+    }
+  
+    .box .sec {
+      width: 100vw;
+    }
+    .grid2 .gridsec {
+      font-size: 24px;
+      text-align: center;
+      width: 46%;
+      margin: 2% 2%;
+      padding: 50px;
+      border-radius: 5px;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .navbar #ht1 {
+      display: block;
+    }
+  
+    .LinkR {
+      display: none;
+    }
+  
+    .sec:last-child {
+      display: none;
+    }
+  
+    .grid1 .gridsec {
+      width: 100%;
+    }
+    .grid2 .gridsec {
+      font-size: 24px;
+      text-align: center;
+      width: 96%;
+      margin: 2% 2%;
+      padding: 50px;
+      border-radius: 5px;
+    }
+  }
+  
