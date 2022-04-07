@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // js function///
+        // function add(num1,num2){
+        //     return num1+num2;    
+        // }
+        // var x = add(4,5);
+        // document.write(x);
+
+        // function toCelsius(f) {
+        //     return (5 / 9) * (f - 32);
+        // }
+        // document.write(toCelsius(23));
+
+        /// fun exp can stored in variables
+
+        // let x = function(a,b){
+        //     return a+b;
+        // }
+        // document.write(x);
+
+        // fun constructor 
+
+        // const myFun = new Function("a","b","return a*b");
+        // document.write(myFun(4,2));
+
+        //arguments.length property in fun 
+
+        // function myFun(a, b) {
+        //     return arguments.length
+        // }
+        // document.write(3, 4);
+
+        /// toString() method returns the function as a string
+
+        // function myFun(a,b){
+        //     return a*b;
+        // }
+        // let text = myFun.toString;
+        // document.write(text);
+
+        /// arrow function
+
+        ///ES6
+        // const x = (x, y) => x * y;
+        // document.write(x(5, 4));
+
+        // return statement with arrow function 
+
+        // const x = (x, y) => {
+        //     return (x + y);
+        // }
+        // document.write(x(2, 4));
+
+        // default parameter 
+
+        // function myFun(x, y) {
+        //     if (y === undefined) {
+        //         y = 2;
+        //     }
+        //     return x * y;
+        // }
+        // document.write(myFun(5, 6));
+
+        // function findmax() {
+        //     let max = -Infinity;
+        //     for (i = 0; i < arguments.length; i++) {
+        //         if (arguments[i] > max) {
+        //             max = arguments[i];
+        //         }
+        //     }
+        //     return max;
+        // }
+        // document.write(findmax(7, 9, 0));
+
+        // function sumAll() {
+        //     let sum = 0;
+        //     for (i = 0; i <= arguments.length; i++) {
+        //         sum += arguments[i];
+        //     }
+        //     return sum;
+        // }
+        // document.write(sumAll(5, 45, 555, 555));
+
+        // function as a mathod
+
+        // const myObject = {
+        //     firstName: "Rakhi",
+        //     lastName: "Chauhan",
+        //     fullName: function(){
+        //         return this.firstName + " " + this.lastName
+        //     }
+        // }
+        // document.write(myObject.fullName());
+
+        ///  fun with constructor 
+
+        // function myFun(arg1, arg2) {
+        //     this.firstName = arg1;
+        //     this.lastName = arg2;
+
+        // }
+        // const myObject = new myFun("Rakhi", "Chauhan");
+        // document.write(myObject.firstName);
+
+        // function call 
+
+        // const person = {
+        //     fullName: function () {
+        //         return this.firstName + " " + this.lastName;
+        //     }
+        // }
+        // const person1 = {
+        //     firstName: "Rakhi",
+        //     lastName: "Chauhan"
+        // }
+        // const person2 = {
+        //     firstName: "nish",
+        //     lastName: "kumar"
+        // }
+        // document.write(person.fullName.call(person1));
+
+        /// fun call 
+
+        // const person = {
+        //     fullName: function () {
+        //         return this.firstName + " " + this.lastName;
+
+        //     }
+        // }
+
+        // const person1 = {
+        //     firstName: "Rakhi",
+        //     lastName: "Chauhan"
+        // }
+        // document.write(person.fullName.apply.person1);
+
+        // const person = {
+        //     firstName: "Rakhi",
+        //     LastName: "Chauhan",
+        //     fullName: function () {
+        //         return this.firstName + " " + this.LastName;
+        //     }
+        // }
+        // const member = {
+        //     firstName: "riyu",
+        //     LastName: "Chauhan"
+        // }
+        // let fullName = person.fullName.bind(member);
+        // document.write(fullName());
+
+        /// Nested Function 
+
+        // function add(){
+        //     let counter = 0;
+        //     function plus(){
+        //         counter += 1;
+        //         plus();
+        //         return counter;
+        //     }
+        // }
+        // document.write(add());
+
+        /// object in js 
+        // adding property in object
+
+        // const person ={};
+        // person.firstName = "Rakhi";
+        // person.lastName = "chauhan";
+        // person.age = "23";
+        // document.write(person.firstName + " is " + person.age + " years old.");
+
+        // for in loop in object 
+
+        // const person = {
+        //     firstName: "Rakhi",
+        //     lastName: "Chauhan",
+        //     age: "23"
+        // }
+        // let text = "";
+        // for (let x in person) {
+        //     text += person[x] + " ";
+        // }
+        // document.write(text);
+
+        // const person = {
+        //     firstName: "Rakhi",
+        //     lastName: "Chauhan",
+        //     age: "22"
+        // }
+        // person.nationality = "English";
+
+        // document.write(person.firstName + " is " + person.nationality);
+
+        /// nested object with loop 
+
+        // let x = "";
+        // const myobj = {
+        //     Name: "Rakhi",
+        //     age: 22,
+        //     cars: [{ Name: "ford", Model: ["Fiesta", "Focus", "Mustang"] },
+        //     { Name: "BMW", Model: ["320", "X3", "X5"] },
+        //     { Name: "fiat", Model: ["500", "Panda"] }
+
+        //     ]
+        // }
+        // for (let i in myobj.cars) {
+        //     x += "<h2>" + myobj.cars[i].Name + "</h2>";
+
+        //     for (let j in myobj.age) {
+        //         x += "<h2>" + myobj.cars[j].Model + "</h2>";
+        //     }
+
+        // }
+
+        // document.write(x);
+
+        /// Using JSON.stringify() 
+
+        // const person = {
+        //     name: "Rakhi",
+        //     age: "30",
+        //     city: "sonipat"
+        // }
+        // let myString = JSON.stringify(person);
+        // document.write(myString);
+
+        // getter mathod 
+
+        // const person = {
+        //     firstName: "Rakhi",
+        //     lastName: "Chauhan",
+        //     get fullName(){
+        //         return this.firstName + " " + this.lastName;
+        //     }
+        // }
+        // document.write(person.fullName);
+
+
+        // iteraing a string 
+
+        // let text = " ";
+        // const name = "RakhiChauhan";
+        // for (let x of name) {
+        //     text += x; + "<br>";
+        // }
+        // document.write(text);
+
+        // iteraing array 
+
+        // let text = " ";
+        // const arr = ["a","b","c"];
+        // for(let x of arr){
+        //     text += x;
+        // }
+        // document.write(text);
+
+        // how to create a set 
+
+        //   const letter = new Set (["a","b","c"]);
+        //   document.write(letter.size);
+
+        // add value in a set 
+
+        // const letter = new Set();
+        // letter.add("a");
+        // letter.add("b");
+        // letter.add("c");
+        // document.write(letter.size);
+
+
+        // add() mathod in set 
+
+        // const letter = new Set(["a","b","c"]);
+        // letter.add("d");
+        // letter.add("f");
+        // document.write(letter.size);
+
+        // for each mathod 
+
+        //     const letter = new Set(["a","b","c"]);
+        //     let text = " ";
+        //    letter.forEach(function(value){
+        //        text += value + "<br>"
+
+        //    });
+        //    document.write(text);
+
+        // create a new map constructor 
+
+        // const fruit = new Map([
+        //     ["apple", 500],
+        //     ["Mango", 600],
+        //     ["pine-apple", 700]
+        // ]);
+        // document.write(fruit.get("apple"))
+
+        /// using map foreach()
+
+        // const fruit = new Map([
+        //     ["apple",700],
+        //     ["mango",750],
+        //     ["pine-apple",800]
+        // ]);
+        // let text = " ";
+        // fruit.forEach(function(value,key){
+        //     text += key +"="+value;
+        // }
+        // )
+        // document.write(text);
+
+        // interpolation
+
+        // let firstName = "Rakhi";
+        // let lastName = "Chauhan";
+        // let text = `welcome ${firstName} , ${lastName}`
+        // document.write(text);
+
+        // template literal 
+
+        // loopin an array 
+
+        // let student = ["rakhi", "chaauhan", "nii", "gd", "gm"];
+        // student.forEach(myFun);
+
+        // function myFun(item) {
+        // document.write(item);
+
+        // }
+
+        // let students = ["rakhi","chauhan","sneha"];
+        // students.forEach(myFun)
+        //  function myFun(item ,index ,arr){
+        //      arr[index] = "Hello" + item;
+
+        //  }
+        //  console.log(students);
+
+        // for Each with arrow function
+
+        // const students = ["swati","rakhi","nish"];
+        // students.forEach(ele =>{
+        //     document.write(ele);
+        // })
+
+        // const fruit = ["aplle","mango","papaya"];
+        // fruit.forEach(element =>
+        // {
+        //     document.write(element);
+        // })
+
+        // const points = [40, 100, 1, 5, 25, 10];
+        // document.write(points);
+        // points.sort(function(a,b){
+        //     return a-b
+        // })
+        // document.write(points);
+
+        // the highest array 
+
+        // const points = [30, 40, 56, 80, 40, 23];
+        // document.write(myArrayMax(points))
+
+        // function myArrayMax(arr) {
+        //     return Math.max.apply(null, arr);
+        // }
+
+        // map mathod 
+
+        // const num1 = ["1", "3,", "6", "10"];
+        // const num2 = num1.map(myFun);
+        // function myFun(array, index, value) {
+        //     return value * 2;
+
+        // }
+        // document.write(num2);
+
+        // array mathod filter /
+
+        // const number = [23, 45, 37, 8, 9];
+        // const number2 = number.filter(myFun);
+        // document.write(number2)
+
+        // function myFun(value) {
+        //     return value < 18;
+
+        // }
+        // date object 
+
+        // const d = new Date();
+        // document.write(d);
+
+        // add to date date mathod 
+
+        // const d = new Date();
+        // d.setDate(d.getDate()+50);
+        // document.write(d);
+
+        // power fun 
+        // document.write(Math.pow(8,2));
+
+        // document.write(Math.random());
+
+        // js error 
+
+        /// js class and inheritance 
+
+        // class student {
+        //     constructor(name, age, cls) {
+        //         this.myname = name;
+        //         this.myage = age;
+        //         this.mycls = cls
+
+        //     }
+        //     bioData() {
+        //         document.write(`Hi my name is ${this.myname} .I am ${this.myage} years old .I am in  ${this.mycls} class`)
+
+        //     }
+        // }
+        // class player extends student {
+        //     constructor(game,name,age,cls) {
+        //         super(game);
+        //         this.mygame = game;
+        //     }
+
+
+
+        // }
+
+        // let obj1 = new student("Rakhi", "22", "MCA","football");
+        // obj1.bioData();
+
+        /// promise in javaScript
+
+        // const obj1 = new Promise((resolve, rejected) => {
+
+        //     setTimeout(() => {
+        //         let rollNo = [1, 2, 3, 4, 5, 6];
+        //         resolve(rollNo);
+        //         rejected("Error while communicating");
+
+        //     }, 2000);
+
+        // });
+        // const bioData = () => {
+        //     return new Promise((resolve, rejected) => {
+        //         setTimeout((indexData) => {
+        //             let bioData = {
+        //                 name: "Rakhi",
+        //                 age: "22"
+        //             }
+        //             resolve(`my Name is ${indexData}. My age is ${bioData.name}`);
+
+        //         }, 3000, indexData);
+        //     });
+
+        // }
+        // // promise consume 
+
+        // obj1.then((rollNo) => {
+        //     document.write(rollNo);
+        //     return bioData(rollNo[1]);
+
+        // }).then((kchbhi) => {
+        //     document.write(kchbhi);
+        // }).catch((error) => {
+        //     document.write(error);
+        // });
+
+
+
+        // function mufun(some) {
+        //     document.write(some);
+        // }
+
+        // let mypromise = new Promise(function (resolve, rejected) {
+        //     let x = 0;
+        //     if (x == 0) {
+        //         myResolve = "ok"
+        //     } else {
+        //         myRejet = "Error"
+        //     }
+        // });
+        // mypromise.then(
+        //     function (value) {
+        //         mufun(value);
+        //     },
+        //     function (error) {
+        //         mufun(error)
+        //     }
+        // )
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

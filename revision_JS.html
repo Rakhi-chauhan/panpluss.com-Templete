@@ -32,24 +32,248 @@
         // }
         // document.write(testnum(-3))
 
-        let day;
-        switch (new Date().getDay()) {
-            case 1:
-                day = "Sunday";
-            case 2:
-                day = "Monday";
-            case 3:
-                day = "Tuesday";
-            case 4:
-                day = "Wednesday";
-            case 5:
-                day = "Thuresday";
-            case 6:
-                day = "Friday";
-            case 7:
-                day = "Saturday";
-        }
-        document.write("today is"  + " " + day);
+        // let day;
+        // switch (new Date().getDay()) {
+        //     case 1:
+        //         day = "Sunday";
+        //     case 2:
+        //         day = "Monday";
+        //     case 3:
+        //         day = "Tuesday";
+        //     case 4:
+        //         day = "Wednesday";
+        //     case 5:
+        //         day = "Thuresday";
+        //     case 6:
+        //         day = "Friday";
+        //     case 7:
+        //         day = "Saturday";
+        // }
+        // document.write("today is"  + " " + day);
+
+        // multiple switch
+
+        // let fruit = apple;
+        // switch (fruit) {
+        //     case "appple":
+        //     case "mango":
+        //     case "papapya":
+        //         document.write(`${fruit} is a fruit.`);
+        //         break;
+        //     default:
+        //         document.write(`${fruit} is not fruit.`);
+        // }
+
+        // function in js
+
+        // function add(a,b){
+        //     return a+b;
+        // }
+        // let number1 = parseFloat(prompt("Enter first number: "));
+        // let number2 = parseFloat(prompt("Enter second number:"));
+        // let result = add(number1+number2);
+        // document.write("The sum is:" + result);
+
+        //    let x = function(num){
+        //        num* num
+        //        document.write(x(4));
+        //    }
+        //    let y = x(3)
+        //    document.write(y);
+
+        // function displayFun(number1 , number2) {
+        //     var total = number1 + number2;
+        //     alert(total);
+        // }
+        // displayFun(2 , 4);
+
+        // function fullName(Fname,Lname){
+        //     alert(Fname+ " "+Lname)
+
+        // }
+        // fullName("Rakhi","chauhan");
+
+        // function sayhello(name = guest){
+        //     alert("Hello" + name);
+
+        // }
+        // sayhello("rakhi");
+
+        //    function divide(dividend,divider){
+        //        var quotient = dividend / divider;
+        //        var arr = [dividend ,divider, quotient];
+        //        return arr;
+        //    }
+        //    var all = divide(10,2);
+        //    alert(all[0]);
+        //    alert(all[1]);
+        //    alert(all[2]);
+
+        // recursion in js //
+
+        // function countDowmNumber(number) {
+        //     document.write(number);
+        //     const newNumber = number - 1;
+        //     if (newNumber > 0) {
+        //         countDowmNumber(newNumber);
+        //     }
+        // }
+        // countDowmNumber(5);
+
+        // object in js
+
+        // const person = {
+        //     firstName: "Rakhi",
+        //     LastName: "Chauhan",
+        //     class: "MCA"
+        // }
+
+        // JavaScript Constructor Fun
+
+        // function person() {
+        //     this.Name = "Rakhi",
+        //         this.sName = "Chauhan",
+        //         this.age = "22"
+        // }
+        // const person = new person();
+
+        // function person() {
+        //     this.name = "Rakhi",
+        //         this.age = "chauhan"
+
+        //     this.greet = function () {
+        //         document.write("hello");
+        //     }
+        // }
+
+        // const person1 = new person();
+        // const person2 = new person();
+        // document.write(person.name);
+        // document.write(person.age);
+
+        // JavaScript Constructor Function Parameters
+
+        //  function person(person_name, person_age, person_gender){
+
+        //     this.name = person_name;
+        //     this.age = person_age;
+        //     this.person_gender = person_gender;
+
+        //     this.greet = function () {
+        //     return ('Hi' + ' ' + this.name);
+        // }
+
+        //  }
+        //  const person1 = new person("rakhi","22","female");
+        //  const person2 = new person("nish","21","male");
+
+        //  document.write(person1.name +"<br>");
+        //  document.write(person2.name);
+
+        // getter mathod
+
+        // const student = {
+        //     firstName: "Rakhi",
+
+        //     get getname() {
+        //         return this.firstName
+        //     }
+        // }
+        // document.write(student.firstName);
+
+        // setter mathod
+
+        // const student = {
+        //     firstName: "Rakhi",
+        //     set changeName(newName) {
+        //         this.firstName = newName;
+        //     }
+        // }
+        // document.write(student.firstName);
+        // student.changeName = "chauhan";
+        // document.write(student.firstName);
+
+        // JavaScript Object.defineProperty()
+
+        // const student = {
+        //     firstName: 'Monica'
+        // }
+        // Object.defineProperty(student, "getName", {
+        //     get: function () {
+        //         return this.firstName;
+        //     }
+        // });
+        // Object.defineProperty(student, "changeName", {
+        //     set: function (value) {
+        //         this.firstName = value;
+        //     }
+        // });
+
+        // console.log(student.firstName);
+        // student.changeName = 'Sarah';
+
+        // console.log(student.firstName);
+
+        // function person (first, last, age, eye) {
+        //     this.FirstName = first;
+        //     this.LastName = last;
+        //     this.age = age;
+        //     this.eyeColour = eye;
+        // }
+        // const myFather = new person("Anand","Chauhan","50","black");
+        // const myMother  = new person("sunita","Chauhan","50","black");
+        // document.write("My father is " + myFather.age + ". My mother is " + myMother.age);
+
+
+        // adding a method to the constructor function
+
+        // function person() {
+        //     this.name = "Rakhi",
+        //         this.age = "Chauhan"
+        // }
+
+        // creating person
+
+        // const person1 = new person();
+        // const person2 = new person();
+
+        // adding a method to the constructor fun
+        // person.prototype.greet = function () {
+        //     document.write('hello' + ' ' + this.name);
+        // }
+        // person1.greet();
+        // person2.greet();
+
+        /// sets mathod in js
+
+        // new() sets
+
+        // const letter = new Set(["a","b","c"])
+        // document.write(letter.size);
+
+        // create a new set add value
+        // const letter = new Set();
+        // letter.add("a");
+        // letter.add("b");
+        // letter.add("c");
+        // document.write(letter.size);
+
+        /// for each mathod()
+
+        // const letter = ["ab","cb","ba"];
+        // let text = " ";
+        // letter.forEach(function(value){
+        //     text += value + "<br>";
+        // });
+        // document.write(text);
+
+        // value mathod
+
+        // const letter = new Set(["a","b","c"]);
+        // document.write(letter.values());
+        
+        
+
 
 
     </script>

@@ -151,3 +151,25 @@
     border-radius: 25px;
     background-color: #4b9961;
   }
+  .css {
+    background-color: rgb(209, 220, 235);
+    color: black;
+  }
+  
+  .css .sec{
+    color: black;
+  }
+  
+  .js {
+    background-color: rgb(230, 230, 163);
+    color: black;
+  }
+  
+  .js .sec{
+    color: black;
+  }
+  
+  .code .space{
+    height: 250px;
+  }
+  
