@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS pratice</title>
+</head>
+
+<p id="demo"></p>
+<p id="p1">Hello World!</p>
+<p id="p2">Hello World!</p>
+<button id="myBtn">Try it</button>
+
+<!-- <div id="main">
+    <p>Finding HTML Elements by Tag Name</p>
+    <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+</div> -->
+
+<body>
+    <script>
+        // function in js 
+        // let x = myFun(4, 5);
+        // document.write(x);
+
+        // function myFun(a, b) {
+        //     return a + b;
+        // }
+
+        // function greet(){
+        //     document.write("hello");
+        // }
+        // greet();
+
+        /// with  out return statement
+
+        // function add(a,b){
+        //     document.write(4+6);
+        // }
+        // add();
+
+        // A fun exp can be stored in  variables 
+
+        // let x = function() {
+        //     return a + b;
+        // }
+        // document.write(x);
+
+        /// function constructor 
+
+        // const myFunction = new Function("a", "b", "return a * b");
+        // document.write(myFunction(4,6));
+
+        /// function hosting 
+
+        /// argument property 
+
+        // function myfun(a,b){
+        //     return arguments.length;
+        // }
+        // document.write(myfun(2,4));
+
+        // arrow function 
+
+        // let x = (x, y) => x * y;
+        // document.write(x(7, 9));
+
+        // arrow function with return statement 
+
+        // let x = (a, b) => {
+        //     return a + b;
+        // }
+        // document.write(x(5, 6));
+
+        // defult value in function 
+
+        // function myFunction(x, y) {
+        //     if (y === undefined) {
+        //         y = 2;
+        //     }
+        //     return x * y;
+        // }
+        // document.write(myFunction(7));
+
+        /// find largest number with function
+
+        // function findmax() {
+        //     let max = -Infinity;
+        //     for (let i = 0; i < arguments.length; i++) {
+        //         if (arguments[i] > max) {
+        //             max = arguments[i];
+        //         }
+
+        //     }
+        //     return max;
+        // }
+        // document.write(findmax(6, 8, 9));
+
+        // sun all value with function 
+
+        // function sumAll() {
+        //     let sum = 0
+        //     for (let i = 0; i < arguments.length; i++) {
+        //         sum += arguments[i];
+        //     }
+        //     return sum;
+        // }
+        // document.write(sumAll(7, 8, 9, 0, 3, 4, 4));
+
+        // Invoking a Function as a Method
+
+        // const myObj = {
+        //     fName: "Rakhi",
+        //     lName: "Chauhan",
+        //     age: "22",
+        //     fullName: function(){
+        //         return this.fName + " "+ this.lName;
+
+        //     }
+        // }
+        // document.write(myObj.fullName());
+
+        // function as an argument 
+
+        // function myfun(arg1, arg2) {
+        //     this.firstName = arg1;
+        //     this.lastName = arg2;
+        // }
+        // const obj = new myfun("rakhi","chauhan");
+        // document.write(obj.firstName);
+        // document.write(obj.lastName);
+
+        /// bind mathod 
+
+        // const person = {
+        //     firstName: "Rakhi",
+        //     lastName: "Chauahan",
+        //     fullName: function () {
+        //         return this.firstName + " " + this.lastName
+        //     }
+
+        // }
+        // const member = {
+        //     firstName: "nish",
+        //     lastName: "kumar"
+        // }
+        // let fullName = person.fullName.bind(member); // borrow the object 
+
+        // document.write(fullName());
+
+        /// display a name after 3 sec 
+
+        // closer in function 
+
+        // const add = (function () {
+        //     let counter = 0;
+        //     return function () { counter += 1; return counter; }
+        // })();
+
+        // function myFunction() {
+        //     document.write = add();
+        // }
+
+        // for in loop 
+
+        // let person = {
+        //     firstName: "Rakhi",
+        //     lastName: "Chauhan",
+        //     age: "23",
+        //     city: "sonipat"
+        // }
+        // let text = "";
+        // for(let x in person){
+        //     text += person[x] + " ";
+        // }
+        // document.write(text);
+
+        // adding new property in object 
+
+        // let person = {
+        //     fName: "Rakhi",
+        //     lName: "Chauhan",
+        //     age: "24"
+        // }
+        // person.nationality = "English"
+        // let text = " ";
+        // for(let x in person){
+        //     text += person[x] +" ";
+        // }
+        // document.write(text);
+
+        /// nested object 
+
+        // const person = {
+        //     fName: "Rakhi",
+        //     lName: "Chauhan",
+        //     cars: {
+        //         car1: "Ford",
+        //         car2: "BMW",
+        //         car3: "Fiat"
+        //     }
+        // }
+        // document.write(person.cars.car2);
+
+        /// nested array and object 
+
+        // const myObj = {
+        //     Name: "Rakhi",
+        //     Age: "23",
+        //     cars: [
+        //         { Name: "Ford", Model: ["Fiesta", "Focus", "Mustang"] },
+        //         { Name: "BMW", Model: ["320", "X3", "X5"] }
+        //     ]
+        // }
+
+
+        // for (let i in myObj.cars) {
+        //     x += "<h2>" + myObj.cars[i].name + "</h2>";
+        //     for (let j in myObj.cars[i].models) {
+        //         x += myObj.cars[i].models[j] + "<br>";
+        //     }
+        // }
+        // document.write(x);
+
+        // object mathod 
+
+        // const person = {
+        //     fName: "Rakhi",
+        //     lName: "Chauhan",
+        //     fullName: function(){
+        //         return this.fName + " " + this.lName;
+        //     }
+        // }
+        // document.write(person.fullName());
+
+        // object using getter in js 
+
+        // const person = {
+        //     fName: "Rakhi",
+        //     lName: "Chauhan",
+        //     age: "23",
+        //     language: "en",
+        //     get lang(){
+        //         return this.language
+        //     }
+        // }
+        // document.write(person.lang);
+
+        // object using setter propety 
+
+        // const person = {
+        //     firstName: "Rakhi",
+        //     lastName: "Chauhan",
+        //     age: "23",
+        //     language: "No",
+        //     set lang(value){
+        //         this.language = value;
+
+        //     }
+        // };
+        // person.lang = "en";
+        // document.write(person.language);
+
+        // Object.defineProperty()
+
+        // define an object 
+
+
+        // const obj = { counter: 0 }
+
+        // define getter and setter 
+
+        // Object.defineProperties(obj, "reset", {
+        //     get: function () {
+        //         this.counter = 0;
+        //     }
+        // });
+        // Object.defineProperties(obj, "increment", {
+        //     get: function () {
+        //         this.counter++;
+        //     }
+        // });
+        // Object.defineProperties(obj, "decrement", {
+        //     get: function () {
+        //         this.counter--;
+        //     }
+        // });
+        // Object.defineProperties(obj, "add", {
+        //     get: function () {
+        //         this.counter += value;
+        //     }
+        // });
+        // Object.defineProperties(obj, "subtract", {
+        //     get: function () {
+        //         this.counter -= value;
+
+        //     }
+        // });
+
+        // obj.reset;
+        // obj.add = 5;
+        // obj.subtract = 1;
+        // obj.increment;
+        // obj.decrement;
+        // document.write(obj.counter);
+
+        /// object constructor 
+
+        // function person(first, last, age, eye){
+        //     this.firstName = first;
+        //     this.lastName = last;
+        //     this.age = age;
+        //     this.eyecolour = eye;
+        // }
+
+        // create a new object 
+        // const myFather = new person("Rakhi","Chauhan","23","blue");
+        // const myMother = new person("Sally", "Rally", 48, "green");
+
+        // document.write("my father age is"+ " "+ myFather.age ,"My mother age is" + myFather.age);
+
+        // object prototype 
+
+        // function person(first, last, age, eye){
+        //     this.firstName = first;
+        //     this.lastName = last;
+        //     this.age = age;
+        //     this.eyecolour = eye;
+        // }
+        // person.prototype.nationality = "english";
+
+        // const myFather = new person("Anand","chauhan","50","blue");
+
+        // document.write(myFather.nationality);
+
+        // for of loop 
+
+        //     const letters = ["a","b","c","d","e"];
+        //     let text = " ";
+        //     for(const x of letters){
+        //         text += x + " "+ "<br>";
+
+        //     }
+        //    document.write(text);
+
+        /// object sets 
+
+        // const letter = new Set(["a","b","c","d"]);
+        // document.write(letter.size);
+
+        // for Each mathod 
+
+
+        // const letters = new Set(["a","b","c","d"]);
+        // let text = " ";
+        // letters.forEach(function(value){
+        //     text += value+"<br>"
+
+        // });
+        // document.write(text);
+
+        // map mathod 
+
+        // const fruit = new Map([
+        //     ["apple" ,500],
+        //     ["Mango",600],
+        //     ["pine-apple",700]
+        // ]);
+        // document.write(fruit.get("apple"));
+
+        // set mathod 
+
+        // const fruit = new Map();
+        // fruit.set("apple",500);
+        // document.write(fruit.get("apple"));
+
+        // map forEach()
+
+
+        // const fruit = new Map([
+        //     ["apple", 400],
+        //     ["banana", 200],
+        //     ["watermalon", 700]
+        // ]);
+        // let text = "";
+        // fruit.forEach(function (value, key) {
+        //     text += key + ' = ' + value + "<br>"
+        //     document.write(text);
+        // });
+
+
+        // Random mathod 
+
+        // const points = [1,3,4,5,7,89,0];
+        // document.write(points);
+
+        // function myFun(){
+        //     points.sort(function(a,b){
+        //         return 0.5 - Math.random()
+        //     });
+
+        // }
+        // document.write(points);
+
+        // for each // 
+
+        // const number = [1, 3, 4, 5, 6, 78, 8];
+        // let text = "";
+        // number.forEach(function (index, value, array) {
+        //     text += value + "<br>"
+        // });
+        // document.write(number);
+
+        // map mathod in array 
+
+        // const number = [2, 3, 44, 5, 6, 6, 66, 6];
+        // const number1 = number.map(muFun);
+        // document.write(number1);
+        // function muFun(value, index, array) {
+        //     return value * 4;
+        // }
+
+        /// filter mathod 
+
+        // const number = [2,3,4,56,18,59];
+        // const over18 = number.filter(myFun);
+        // document.write(over18);
+
+        // function myFun(array,index,value){
+        //     return value < 18;
+        // }
+
+        // reduce mathod 
+
+        // const number = [4,5,6,7,7,77];
+        // const reduceNum = number.reduce(myFun);
+        // document.write(reduceNum);
+        // function myFun(total ,value,index,array){
+        //     return total + value;
+        // }
+
+        // Array reduce right 
+
+        // const fruit = ["apple","mango","pine-apple","ppapap"];
+        // const keys = fruit.keys();
+        // let text = "";
+        // for(let x of keys){
+        //     text += x + "<br>"
+        // }
+        // document.write(text);
+
+        /// setter mathod 
+
+        // const person = {
+        //     firstName: "Rakhi",
+        //     lastName: "Chauhan",
+        //     set lang(value) {
+        //         this.language = value;
+
+        //     }
+        // }
+        // person.lang = "en"
+        // document.write(person.language);
+
+        // document.getElementById("demo").innerHTML = "heelo DOM"
+        // id and Tag Name 
+
+
+        // const x = document.getElementById("main");
+        // const y = x.document.getElementByTagName("p");
+        // document.getElementById("demo").innerHTML = 'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+
+        // dom csss 
+
+        // document.getElementById("p2").style.color = "blue";
+        // document.getElementById("p2").style.fontSize = "larger";
+        // document.getElementById("p2").style.fontFamily = "Arial"
+
+        // css events 
+
+        //addEventListener in js 
+
+        // document.getElementById("myBtn").addEventListener("click",function(){
+        //     alert("heloo")
+        // });
+        
+        // const x = document.getElementById("myBtn")
+        // x.addEventListener("click",myFun);
+        // x.addEventListener("click",someOtherFun);
+
+        // function myFun(){
+        //     alert("hello");
+        // }
+        // function someOtherFun(){
+        //     alert("hello Rakhi");
+        // }
+
+        // var x = document.getElementById("myBtn")
+        // x.addEventListener("click" ,myFun);
+        // x.addEventListener("click",myFun1);
+        // x.addEventListener("click",myFun2);
+
+        // function myFun(){
+        //     document.getElementById("demo").innerHTML += "Moused over!<br>";
+        // }
+        // function myFun1(){
+        //     document.getElementById("demo").innerHTML += "Moused clicked!<br>";
+        // }
+        // function myFun2(){
+        //     document.getElementById("demo").innerHTML += "Moused out!<br>";
+        // }
+
+        // let p1 = 3;
+        // let p2 = 5;
+        // document.getElementById("myBtn").addEventListener("click", function myfun(p1,p2){
+
+        // });
+        // function myFun(a,b){
+        //     document.getElementById("demo").innerHTML = a * b;
+        // }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
